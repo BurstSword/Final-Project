@@ -5,7 +5,7 @@ import { Weapon } from "../models/weapon.model";
 
 class weaponController {
 
-    findAllWeapons(res: Response) {
+    findAllWeapons(_req: Request, res: Response) {
 
         Weapon.find().then((WeaponDB) => {
             if (!WeaponDB) {
@@ -25,16 +25,6 @@ class weaponController {
                 status: 500,
                 message: "DB Error",
                 error: err
-            })
-        })
-    }
-
-    insertAllEnemies(req: Request, res: Response) {
-
-        Weapon.create(req.body).then((ArtifactBD) => {
-            return res.status(200).send({
-                status: 200,
-                message: "Inserted!"
             })
         })
     }

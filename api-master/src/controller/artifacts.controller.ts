@@ -6,15 +6,11 @@ import { ArtifactSet } from "../models/artifacts.model";
 
 class artifactController {
 
-    /**
-     * Method to find 
-     * @param req 
-     * @param res 
-     */
-    findAllSets(req: Request, res: Response) {
+    
+    findAllSets(_req: Request, res: Response) {
 
-        ArtifactSet.find().then((ArtifactDB) => {
-            if (!ArtifactDB) {
+        ArtifactSet.find().then((ArtifactSetDB) => {
+            if (!ArtifactSetDB) {
                 return res.status(500).send({
                     status: 500,
                     message: "Nothing on DB"
@@ -24,7 +20,7 @@ class artifactController {
             return res.status(200).send({
                 status: 200,
                 message: "Found!",
-                artifacts: ArtifactDB
+                artifacts: ArtifactSetDB
             })
 
 
@@ -37,8 +33,8 @@ class artifactController {
         })
     }
     findOneSet(req: Request, res: Response) {
-        ArtifactSet.findOne({ name: req.body.name }).then((ArtifactDB) => {
-            if (!ArtifactDB) {
+        ArtifactSet.findOne({ name: req.body.name }).then((ArtifactSetDB) => {
+            if (!ArtifactSetDB) {
                 return res.status(500).send({
                     status: 500,
                     message: "Nothing on DB"
@@ -48,7 +44,7 @@ class artifactController {
             return res.status(200).send({
                 status: 200,
                 message: "Found!",
-                artifacts: ArtifactDB
+                artifacts: ArtifactSetDB
             })
         }).catch((err: any) => {
             return res.status(500).send({

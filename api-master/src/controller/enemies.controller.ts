@@ -5,7 +5,7 @@ import { Enemy } from "../models/enemies.model";
 
 class enemiesController {
 
-    findAllEnemies(res: Response) {
+    findAllEnemies(_req:Request, res: Response) {
 
         Enemy.find().then((EnemyDB) => {
             if (!EnemyDB) {

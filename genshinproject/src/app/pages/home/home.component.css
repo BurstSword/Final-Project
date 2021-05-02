@@ -1,0 +1,9 @@
+html {
+    background-image: url('../../../assets/images/backlogin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    font-family: 'Numans', sans-serif;
+    overflow: hidden;
+}
+

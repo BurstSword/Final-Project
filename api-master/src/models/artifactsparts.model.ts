@@ -5,13 +5,13 @@ import mongoose from 'mongoose'
 
 interface ArtifactPart extends Document {
     name: string,
-    stats: string[],
-    idSet: string
+    idSet: string,
+    type:string
 }
 const artifactSchema = new Schema({
     name: { type: String },
-    stats: { type: Array },
     idSet: { type: String },
+    type: { type: String }
 
 })
 

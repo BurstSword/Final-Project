@@ -30,7 +30,7 @@ class userController {
                 return res.status(500).send({
                     status: 500,
                     error: err,
-                    message:"Problems with database"
+                    message: "Problems with database"
                 })
             });
         });
@@ -57,6 +57,7 @@ class userController {
                 } else {
                     return res.status(500).send({
                         status: 500,
+                        err: err,
                         message: "Incorrect credentials"
                     })
                 }
@@ -70,8 +71,6 @@ class userController {
                 error: err
             })
         })
-
-
 
     }
 }

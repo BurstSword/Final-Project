@@ -11,10 +11,10 @@ class artifactPartController {
      * @param req 
      * @param res 
      */
-    findAllSets(req: Request, res: Response) {
-
-        ArtifactPart.find().then((ArtifactDB) => {
-            if (!ArtifactDB) {
+    findAllPartsFromSet(req: Request, res: Response) {
+        
+        ArtifactPart.find(req.body.idSet).then((ArtifactPartDB) => {
+            if (!ArtifactPartDB) {
                 return res.status(500).send({
                     status: 500,
                     message: "Nothing on DB"
@@ -24,7 +24,7 @@ class artifactPartController {
             return res.status(200).send({
                 status: 200,
                 message: "Found!",
-                artifacts: ArtifactDB
+                artifacts: ArtifactPartDB
             })
 
 
@@ -36,9 +36,9 @@ class artifactPartController {
             })
         })
     }
-    findOneSet(req: Request, res: Response) {
-        ArtifactPart.findOne({ name: req.body.name }).then((ArtifactDB) => {
-            if (!ArtifactDB) {
+    findOnePart(req: Request, res: Response) {
+        ArtifactPart.findOne({ name: req.body.name }).then((ArtifactPartDB) => {
+            if (!ArtifactPartDB) {
                 return res.status(500).send({
                     status: 500,
                     message: "Nothing on DB"
@@ -48,7 +48,7 @@ class artifactPartController {
             return res.status(200).send({
                 status: 200,
                 message: "Found!",
-                artifacts: ArtifactDB
+                artifacts: ArtifactPartDB
             })
         }).catch((err: any) => {
             return res.status(500).send({
@@ -58,9 +58,6 @@ class artifactPartController {
             })
         })
     }
-
-    
-
 }
 
 export default artifactPartController

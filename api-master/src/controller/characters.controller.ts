@@ -5,7 +5,7 @@ import { Character } from "../models/characters.model";
 
 class characterController {
 
-    findAllCharacters(res: Response) {
+    findAllCharacters(_req:Request, res: Response) {
 
         Character.find().then((CharacterDB) => {
             if (!CharacterDB) {
@@ -14,11 +14,11 @@ class characterController {
                     message: "Nothing on DB"
                 })
             }
-
+            
             return res.status(200).send({
                 status: 200,
                 message: "Found!",
-                artifacts: CharacterDB
+                characters: CharacterDB
             })
         }).catch((err: any) => {
             return res.status(500).send({
@@ -29,7 +29,7 @@ class characterController {
         })
     }
 
-    
+
 }
 
 export default characterController

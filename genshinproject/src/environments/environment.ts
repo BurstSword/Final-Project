@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  databaseURL:"http://localhost:3300/"
+  databaseURL:"http://localhost:3300/",
+  assetsURL:"http://localhost:5000/"
 };
 
 /*

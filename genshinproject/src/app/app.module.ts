@@ -9,19 +9,37 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthInterceptor } from './utils/auth.interceptor';
 import { HomeComponent } from './pages/home/home.component';
+import { NavComponent } from './components/nav/nav.component';
+import { CharactersComponent } from './pages/characters/characters.component';
+import { CharacterimagePipe } from './pipes/characterimage.pipe';
+import { ConstellationPipe } from './pipes/constellation.pipe';
+import { TypesPipe } from './pipes/types.pipe';
+import { ElementsPipe } from './pipes/elements.pipe';
+import { NgxSplideModule } from 'ngx-splide';
+import { LoadingComponent } from './components/loading/loading.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    NavComponent,
+    CharactersComponent,
+    CharacterimagePipe,
+    ConstellationPipe,
+    TypesPipe,
+    ElementsPipe,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxSplideModule
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]

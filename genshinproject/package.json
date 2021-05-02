@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~11.1.0",
     "@angular/platform-browser-dynamic": "~11.1.0",
     "@angular/router": "~11.1.0",
+    "@splidejs/splide": "^2.4.21",
+    "ngx-splide": "^0.0.4",
     "rxjs": "~6.6.0",
     "sweetalert2": "^10.16.6",
     "tslib": "^2.0.0",
