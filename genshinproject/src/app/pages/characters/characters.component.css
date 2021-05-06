@@ -3,7 +3,7 @@ html {
     text-align: left;
     background-color: white;
     height: 100vh; 
-     
+    font-family: 'Numans', sans-serif;
 }
 .container{
     width: 80%;

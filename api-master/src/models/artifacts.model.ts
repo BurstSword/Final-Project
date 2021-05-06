@@ -5,8 +5,7 @@ interface ArtifactSet extends Document {
     name: string,
     max_rarity: number,
     two_piece_bonus: string,
-    four_piece_bonus: string,
-    
+    four_piece_bonus: string
 }
 
 

@@ -17,6 +17,8 @@ import { TypesPipe } from './pipes/types.pipe';
 import { ElementsPipe } from './pipes/elements.pipe';
 import { NgxSplideModule } from 'ngx-splide';
 import { LoadingComponent } from './components/loading/loading.component';
+import { ArtifactsComponent } from './pages/artifacts/artifacts.component';
+import { ArtifactSetPipe } from './pipes/artifact-set.pipe';
 
 
 
@@ -32,7 +34,9 @@ import { LoadingComponent } from './components/loading/loading.component';
     ConstellationPipe,
     TypesPipe,
     ElementsPipe,
-    LoadingComponent
+    LoadingComponent,
+    ArtifactsComponent,
+    ArtifactSetPipe
   ],
   imports: [
     BrowserModule,

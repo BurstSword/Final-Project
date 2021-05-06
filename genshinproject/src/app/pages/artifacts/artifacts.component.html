@@ -1,0 +1,27 @@
+<html>
+<app-nav></app-nav>
+<div class="container-fluid mt-2">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Artifacts</li>
+        </ol>
+    </nav>
+
+    <splide id="sliderCharacters" class="animated fadeIn" hidden [options]="{ 
+        fixedWidth: 100,
+        height: 100,
+        gap: 5,
+        drag:true,
+        pagination: false,
+        isNavigation: false,
+        direction:'ttb',
+        type: 'slide'}">
+        <splide-slide *ngFor="let item of artifacts">
+            <img class="img img-thumbnail" src="{{item.name}}" />
+        </splide-slide>
+    </splide>
+</div>
+
+</html>

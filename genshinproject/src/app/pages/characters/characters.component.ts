@@ -26,6 +26,7 @@ export class CharactersComponent implements OnInit {
   findCharacters() {
     this.CharacterService.findCharacters().subscribe(resp => {
       this.characters = resp.characters;
+      this.characterSelected=resp.characters[0];
     }, err => {
     })
   }

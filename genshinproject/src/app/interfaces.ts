@@ -1,19 +1,31 @@
-export interface ResponseUser{
+export interface ResponseUser {
     status: number,
     message: string,
     user: User,
-    token?:string,
-    error?:string
+    token?: string,
+    error?: string
 }
-export interface ResponseCharacter{
+export interface ResponseCharacter {
     status: number,
     message: string,
     characters: Character[],
-    error?:string
+    error?: string
+}
+export interface ResponseArtifact {
+    status: number,
+    message: string,
+    artifacts: ArtifactSet[],
+    error?: string
+}
+export interface ResponseArtifactPart {
+    status: number,
+    message: string,
+    artifacts: ArtifactPart,
+    error?: string
 }
 
-export interface User{
-    _id:string,
+export interface User {
+    _id: string,
     username: string,
     email?: string,
     password: string,
@@ -35,6 +47,24 @@ export interface Character {
     vision_key: string,
     weapon_type: string
 }
+
+export interface ArtifactSet {
+    _id: string,
+    name: string,
+    max_rarity: number,
+    two_piece_bonus: string,
+    four_piece_bonus: string
+    flowerName:string
+}
+
+export interface ArtifactPart {
+    _id: string,
+    name: string,
+    idSet: string,
+    type: string
+}
+
+
 
 export interface SkillTalents {
     name: string,

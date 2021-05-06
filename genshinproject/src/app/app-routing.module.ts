@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './guards/auth.guard';
+import { ArtifactsComponent } from './pages/artifacts/artifacts.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'home', canActivate: [AuthGuard], component: HomeComponent },
   { path: 'characters', canActivate: [AuthGuard], component: CharactersComponent },
+  { path: 'artifacts', canActivate: [AuthGuard], component: ArtifactsComponent },
   { path: '', pathMatch: "full", redirectTo: "home" },
   { path: '**', pathMatch: "full", redirectTo: "login" }
 ];

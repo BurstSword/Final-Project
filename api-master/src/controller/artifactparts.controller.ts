@@ -37,7 +37,8 @@ class artifactPartController {
         })
     }
     findOnePart(req: Request, res: Response) {
-        ArtifactPart.findOne({ name: req.body.name }).then((ArtifactPartDB) => {
+        console.log(req.body)
+        ArtifactPart.findOne({ idSet:req.body.idSet ,type: "flower" }).then((ArtifactPartDB) => {
             if (!ArtifactPartDB) {
                 return res.status(500).send({
                     status: 500,

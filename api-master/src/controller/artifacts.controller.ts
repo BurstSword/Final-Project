@@ -6,7 +6,7 @@ import { ArtifactSet } from "../models/artifacts.model";
 
 class artifactController {
 
-    
+
     findAllSets(_req: Request, res: Response) {
 
         ArtifactSet.find().then((ArtifactSetDB) => {
@@ -17,6 +17,7 @@ class artifactController {
                 })
             }
 
+            
             return res.status(200).send({
                 status: 200,
                 message: "Found!",
@@ -55,7 +56,7 @@ class artifactController {
         })
     }
 
-    
+
 
 }
 
