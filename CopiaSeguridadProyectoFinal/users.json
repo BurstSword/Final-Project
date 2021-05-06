@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "608189bcee7994383409a739"
+  },
+  "username": "BurstSword",
+  "email": "miguel@mail.com",
+  "password": "$2b$10$AGSPU5fdDgI9WkEQfQc8xe9XJFiv9OTZaj8H5wLIC3/3LSds8Dk6i",
+  "createdAt": {
+    "$date": "2021-04-22T14:35:40.716Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-22T14:35:40.716Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "608ed82d3cbae5291ced2a17"
+  },
+  "username": "JaviApruebame",
+  "email": "javi@mail.com",
+  "password": "$2b$10$/8O8QdiExoQVG4vcvpdBzeAUE4RiEEcDhOICLQUrpcRO/bUeyyrlO",
+  "createdAt": {
+    "$date": "2021-05-02T16:49:49.752Z"
+  },
+  "updatedAt": {
+    "$date": "2021-05-02T16:49:49.752Z"
+  },
+  "__v": 0
+}]

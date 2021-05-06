@@ -1,0 +1,511 @@
+[{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0d5"
+  },
+  "name": "Adventurer",
+  "max_rarity": 3,
+  "two_piece_bonus": "Max HP increased by 1,000.",
+  "four_piece_bonus": "Opening chest regenerates 30% Max HP over 5s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.360Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0d6"
+  },
+  "name": "Archaic Petra",
+  "max_rarity": 5,
+  "two_piece_bonus": "Gain a 15% Geo DMG Bonus.",
+  "four_piece_bonus": "Upon obtaining an Elemental Shard created through a Crystallize Reaction, all party members gain a 35% DMG Bonus for that particular element for 10s. Only one form of Elemental DMG Bonus can be gained in this manner at any one time.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.361Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0d7"
+  },
+  "name": "Berserker",
+  "max_rarity": 4,
+  "two_piece_bonus": "CRIT Rate +12%",
+  "four_piece_bonus": "When HP is below 70%, CRIT Rate increases by an additional 24%.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.362Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0d8"
+  },
+  "name": "Blizzard Strayer",
+  "max_rarity": 5,
+  "two_piece_bonus": "Cryo DMG Bonus +15%",
+  "four_piece_bonus": "When a character attacks an enemy affected by Cryo, their CRIT Rate is increased by 20%. If the enemy is Frozen, CRIT Rate is increased by an additional 20%.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.363Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0d9"
+  },
+  "name": "Bloodstained Chivalry",
+  "max_rarity": 5,
+  "two_piece_bonus": "Physical DMG +25%",
+  "four_piece_bonus": "After defeating an opponent, increases Charged Attack DMG by 50%, and reduces its Stamina cost to 0 for 10s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.363Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0da"
+  },
+  "name": "Brave Heart",
+  "max_rarity": 4,
+  "two_piece_bonus": "ATK +18%",
+  "four_piece_bonus": "Increases DMG by 30% against enemies with more than 50% HP.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.363Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0db"
+  },
+  "name": "Crimson Witch of Flames",
+  "max_rarity": 5,
+  "two_piece_bonus": "Gain a 15% Pyro DMG Bonus.",
+  "four_piece_bonus": "Increases Overloaded and Burning DMG by 40%. Increases Vaporize and Melt DMG by 15%. Using an Elemental Skill increases 2-Piece Set effects by 50% for 10s. Max 3 stacks.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.364Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0dc"
+  },
+  "name": "Defender's Will",
+  "max_rarity": 4,
+  "two_piece_bonus": "Base DEF +30%",
+  "four_piece_bonus": "Increases Elemental RES by 30% for each element present in the party.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.364Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0dd"
+  },
+  "name": "Gambler",
+  "max_rarity": 4,
+  "two_piece_bonus": "Elemental Skill DMG increased by 20%",
+  "four_piece_bonus": "Defeating an enemy has 100% chance to remove Elemental Skill CD. Can only occur once every 15s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.365Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0de"
+  },
+  "name": "Gladiator's Finale",
+  "max_rarity": 5,
+  "two_piece_bonus": "ATK +18%",
+  "four_piece_bonus": "If the wielder of this artifact set uses a Sword, Claymore or Polearm, increases their Normal Attack DMG by 35%.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.365Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0df"
+  },
+  "name": "Heart of Depth",
+  "max_rarity": 5,
+  "two_piece_bonus": "Hydro DMG Bonus +15%",
+  "four_piece_bonus": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 30% for 15s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.365Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e0"
+  },
+  "name": "Instructor",
+  "max_rarity": 4,
+  "two_piece_bonus": "Increases Elemental Mastery by 80.",
+  "four_piece_bonus": "After using Elemental Skill, increases all party members' Elemental Mastery by 120 for 8s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.366Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e1"
+  },
+  "name": "Lavawalker",
+  "max_rarity": 5,
+  "two_piece_bonus": "Pyro RES increased by 40%",
+  "four_piece_bonus": "Increases DMG against enemies that are Burning or affected by Pyro by 35%.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.366Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e2"
+  },
+  "name": "Lucky Dog",
+  "max_rarity": 3,
+  "two_piece_bonus": "DEF increased by 100.",
+  "four_piece_bonus": "Picking up Mora restores 300 HP.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.367Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e3"
+  },
+  "name": "Maiden Beloved",
+  "max_rarity": 5,
+  "two_piece_bonus": "Character Healing Effectiveness +15%",
+  "four_piece_bonus": "Using an Elemental Skill or Burst increases healing received by all party members by 20% for 10s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.367Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e4"
+  },
+  "name": "Martial Artist",
+  "max_rarity": 4,
+  "two_piece_bonus": "Increases Normal Attack and Charged Attack DMG by 15%.",
+  "four_piece_bonus": "After using Elemental Skill, increases Normal Attack and Charged Attack DMG by 25% for 8s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.368Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e5"
+  },
+  "name": "Noblesse Oblige",
+  "max_rarity": 5,
+  "two_piece_bonus": "Elemental Burst DMG +20%",
+  "four_piece_bonus": "Using an Elemental Burst increase all party members' ATK by 20% for 12s. This effect cannot stack.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.368Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e6"
+  },
+  "name": "Resolution of Sojourner",
+  "max_rarity": 4,
+  "two_piece_bonus": "ATK +18%",
+  "four_piece_bonus": "Increases Charged Attack CRIT Rate by 30%.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.368Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e7"
+  },
+  "name": "Retracing Bolide",
+  "max_rarity": 5,
+  "two_piece_bonus": "Increases Shield Strength by 35%.",
+  "four_piece_bonus": "While protected by a shield, gain an additional 40% Normal and Charged Attack DMG.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.369Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e8"
+  },
+  "name": "Scholar",
+  "max_rarity": 4,
+  "two_piece_bonus": "Energy Recharge +20%.",
+  "four_piece_bonus": "Gaining Energy gives 3 Energy to all party members who have a bow or a catalyst equipped. Can only occurs once every 3s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.369Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0e9"
+  },
+  "name": "The Exile",
+  "max_rarity": 4,
+  "two_piece_bonus": "Energy Recharge +20%",
+  "four_piece_bonus": "Using an Elemental Burst regenerates 2 Energy for other party members every 2s for 6s. This effect cannot stack.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.370Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0ea"
+  },
+  "name": "Thundering Fury",
+  "max_rarity": 5,
+  "two_piece_bonus": "Gain a 15% Electro DMG Bonus.",
+  "four_piece_bonus": "Increases damage caused by Overloaded, Electro-Charged, and Superconduct DMG by 40%. Triggering such effects decreases Elemental Skill CD by 1s. Can only occur once every 0.8s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.370Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0eb"
+  },
+  "name": "Thundersoother",
+  "max_rarity": 5,
+  "two_piece_bonus": "Electro RES increased by 40%",
+  "four_piece_bonus": "Increases DMG against enemies affected by Electro by 35%.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.371Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0ec"
+  },
+  "name": "Tiny Miracle",
+  "max_rarity": 4,
+  "two_piece_bonus": "All Elemental RES increased by 20%",
+  "four_piece_bonus": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.371Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0ed"
+  },
+  "name": "Traveling Doctor",
+  "max_rarity": 3,
+  "two_piece_bonus": "Increases incoming healing by 20%.",
+  "four_piece_bonus": "Using Elemental Burst restores 20% HP.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.372Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0ee"
+  },
+  "name": "Viridescent Venerer",
+  "max_rarity": 5,
+  "two_piece_bonus": "Gain a 15% Anemo DMG Bonus.",
+  "four_piece_bonus": "Increases Swirl DMG by 60%. Decreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.372Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d644b65ea14152438a0ef"
+  },
+  "name": "Wanderer's Troupe",
+  "max_rarity": 5,
+  "two_piece_bonus": "Elemental Mastery +80",
+  "four_piece_bonus": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or Bow.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:06:51.373Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d6be80daf882a589ad02a"
+  },
+  "name": "The Exile",
+  "max_rarity": 4,
+  "two_piece_bonus": "Energy Recharge +20%",
+  "four_piece_bonus": "Using an Elemental Burst regenerates 2 Energy for other party members every 2s for 6s. This effect cannot stack.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:39:20.481Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d6be80daf882a589ad02b"
+  },
+  "name": "Thundering Fury",
+  "max_rarity": 5,
+  "two_piece_bonus": "Gain a 15% Electro DMG Bonus.",
+  "four_piece_bonus": "Increases damage caused by Overloaded, Electro-Charged, and Superconduct DMG by 40%. Triggering such effects decreases Elemental Skill CD by 1s. Can only occur once every 0.8s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:39:20.482Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d6be80daf882a589ad02c"
+  },
+  "name": "Thundersoother",
+  "max_rarity": 5,
+  "two_piece_bonus": "Electro RES increased by 40%",
+  "four_piece_bonus": "Increases DMG against enemies affected by Electro by 35%.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:39:20.483Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d6be80daf882a589ad02d"
+  },
+  "name": "Tiny Miracle",
+  "max_rarity": 4,
+  "two_piece_bonus": "All Elemental RES increased by 20%",
+  "four_piece_bonus": "Incoming elemental DMG increases corresponding Elemental RES by 30% for 10s. Can only occur once every 10s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:39:20.483Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d6be80daf882a589ad02e"
+  },
+  "name": "Traveling Doctor",
+  "max_rarity": 3,
+  "two_piece_bonus": "Increases incoming healing by 20%.",
+  "four_piece_bonus": "Using Elemental Burst restores 20% HP.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:39:20.484Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d6be80daf882a589ad02f"
+  },
+  "name": "Viridescent Venerer",
+  "max_rarity": 5,
+  "two_piece_bonus": "Gain a 15% Anemo DMG Bonus.",
+  "four_piece_bonus": "Increases Swirl DMG by 60%. Decreases opponent's Elemental RES to the element infused in the Swirl by 40% for 10s.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:39:20.484Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+},{
+  "_id": {
+    "$oid": "607d6be80daf882a589ad030"
+  },
+  "name": "Wanderer's Troupe",
+  "max_rarity": 5,
+  "two_piece_bonus": "Elemental Mastery +80",
+  "four_piece_bonus": "Increases Charged Attack DMG by 35% if the character uses a Catalyst or Bow.",
+  "__v": 0,
+  "createdAt": {
+    "$date": "2021-04-19T11:39:20.484Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-19T18:56:54.941Z"
+  }
+}]

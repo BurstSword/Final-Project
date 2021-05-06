@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "607c92ec825afd16a4f06c26"
+  },
+  "name": "Liyue",
+  "element": "Geo",
+  "archon": "Morax",
+  "controllingEntity": "Liyue Qixing",
+  "description": "A bountiful harbor that lies in the east of Teyvat. Mountains stand tall and proud alongside the stone forest, that, together with the open plains and lively rivers, make up Liyue's bountiful landscape, which shows its unique beauty through each of the four seasons. Just how many gifts from the Geo God lie in wait amongst the rocks of Liyue's mountains?",
+  "createdAt": {
+    "$date": "2021-04-18T20:13:32.684Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-18T20:13:32.684Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "607c9320825afd16a4f06c27"
+  },
+  "name": "Mondstadt",
+  "element": "Anemo",
+  "archon": "Barbatos",
+  "controllingEntity": "Knights of Favonius",
+  "description": "A city of freedom that lies in the northeast of Teyvat. From amongst mountains and wide-open plains, carefree breezes carry the scent of dandelions — a gift from the Anemo God, Barbatos — across Cider Lake to Mondstadt, which sits on an island in the middle of the lake.",
+  "createdAt": {
+    "$date": "2021-04-18T20:14:24.117Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-18T20:14:24.117Z"
+  },
+  "__v": 0
+}]

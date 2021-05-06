@@ -1,0 +1,1361 @@
+[{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af0"
+  },
+  "name": "Adventurer`s Flower",
+  "idSet": "607d644b65ea14152438a0d5",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af1"
+  },
+  "name": "Adventurer's Tail Feather",
+  "idSet": "607d644b65ea14152438a0d5",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af2"
+  },
+  "name": "Adventurer's Pocket Watch",
+  "idSet": "607d644b65ea14152438a0d5",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af3"
+  },
+  "name": "Adventurer's Golden Goblet",
+  "idSet": "607d644b65ea14152438a0d5",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af4"
+  },
+  "name": "Adventurer's Bandana",
+  "idSet": "607d644b65ea14152438a0d5",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af5"
+  },
+  "name": "Flower of Creviced Cliff",
+  "idSet": "607d644b65ea14152438a0d6",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af6"
+  },
+  "name": "Feather of Jagged Peaks",
+  "idSet": "607d644b65ea14152438a0d6",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af7"
+  },
+  "name": "Sundial of Enduring Jade",
+  "idSet": "607d644b65ea14152438a0d6",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af8"
+  },
+  "name": "Goblet of Chiseled Crag",
+  "idSet": "607d644b65ea14152438a0d6",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508af9"
+  },
+  "name": "Mask of Solitude Basalt",
+  "idSet": "607d644b65ea14152438a0d6",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508afa"
+  },
+  "name": "Berserker's Rose",
+  "idSet": "607d644b65ea14152438a0d7",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508afb"
+  },
+  "name": "Berserker's Indigo Feather",
+  "idSet": "607d644b65ea14152438a0d7",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508afc"
+  },
+  "name": "Berserker's Timepiece",
+  "idSet": "607d644b65ea14152438a0d7",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508afd"
+  },
+  "name": "Berserker's Bone Goblet",
+  "idSet": "607d644b65ea14152438a0d7",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508afe"
+  },
+  "name": "Berserker's Battle Mask",
+  "idSet": "607d644b65ea14152438a0d7",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508aff"
+  },
+  "name": "Snowswept Memory",
+  "idSet": "607d644b65ea14152438a0d8",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b00"
+  },
+  "name": "Icebreaker's Resolve",
+  "idSet": "607d644b65ea14152438a0d8",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b01"
+  },
+  "name": "Frozen Homeland's Demise",
+  "idSet": "607d644b65ea14152438a0d8",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b02"
+  },
+  "name": "Frost-Weaved Dignity",
+  "idSet": "607d644b65ea14152438a0d8",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b03"
+  },
+  "name": "Broken Rime's Echo",
+  "idSet": "607d644b65ea14152438a0d8",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b04"
+  },
+  "name": "Bloodstained Flower of Iron",
+  "idSet": "607d644b65ea14152438a0d9",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b05"
+  },
+  "name": "Bloodstained Black Plume",
+  "idSet": "607d644b65ea14152438a0d9",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b06"
+  },
+  "name": "Bloodstained Final Hour",
+  "idSet": "607d644b65ea14152438a0d9",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b07"
+  },
+  "name": "Bloodstained Chevalier's Goblet",
+  "idSet": "607d644b65ea14152438a0d9",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b08"
+  },
+  "name": "Bloodstained Iron Mask",
+  "idSet": "607d644b65ea14152438a0d9",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b09"
+  },
+  "name": "Medal of the Brave",
+  "idSet": "607d644b65ea14152438a0da",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b0a"
+  },
+  "name": "Prospect of the Brave",
+  "idSet": "607d644b65ea14152438a0da",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b0b"
+  },
+  "name": "Fortitude of the Brave",
+  "idSet": "607d644b65ea14152438a0da",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b0c"
+  },
+  "name": "Outset of the Brave",
+  "idSet": "607d644b65ea14152438a0da",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b0d"
+  },
+  "name": "Crown of the Brave",
+  "idSet": "607d644b65ea14152438a0da",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b0e"
+  },
+  "name": "Witch's Flower of Blaze",
+  "idSet": "607d644b65ea14152438a0db",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b0f"
+  },
+  "name": "Witch's Ever-Burning Plume",
+  "idSet": "607d644b65ea14152438a0db",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b10"
+  },
+  "name": "Witch's End Time",
+  "idSet": "607d644b65ea14152438a0db",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b11"
+  },
+  "name": "Witch's Heart Flames",
+  "idSet": "607d644b65ea14152438a0db",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b12"
+  },
+  "name": "Witch's Scorching Hat",
+  "idSet": "607d644b65ea14152438a0db",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b13"
+  },
+  "name": "Guardian's Flower",
+  "idSet": "607d644b65ea14152438a0dc",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b14"
+  },
+  "name": "Guardian's Sigil",
+  "idSet": "607d644b65ea14152438a0dc",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b15"
+  },
+  "name": "Guardian's Clock",
+  "idSet": "607d644b65ea14152438a0dc",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b16"
+  },
+  "name": "Guardian's Vessel",
+  "idSet": "607d644b65ea14152438a0dc",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b17"
+  },
+  "name": "Guardian's Band",
+  "idSet": "607d644b65ea14152438a0dc",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b18"
+  },
+  "name": "Gambler's Brooch",
+  "idSet": "607d644b65ea14152438a0dd",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b19"
+  },
+  "name": "Gambler's Feather Accessory",
+  "idSet": "607d644b65ea14152438a0dd",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b1a"
+  },
+  "name": "Gambler's Pocket Watch",
+  "idSet": "607d644b65ea14152438a0dd",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b1b"
+  },
+  "name": "Gambler's Dice Cup",
+  "idSet": "607d644b65ea14152438a0dd",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b1c"
+  },
+  "name": "Gambler's Earrings",
+  "idSet": "607d644b65ea14152438a0dd",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b1d"
+  },
+  "name": "Gladiator's Nostalgia",
+  "idSet": "607d644b65ea14152438a0de",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b1e"
+  },
+  "name": "Gladiator's Destiny",
+  "idSet": "607d644b65ea14152438a0de",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b1f"
+  },
+  "name": "Gladiator's Longing",
+  "idSet": "607d644b65ea14152438a0de",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b20"
+  },
+  "name": "Gladiator's Intoxication",
+  "idSet": "607d644b65ea14152438a0de",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b21"
+  },
+  "name": "Gladiator's Triumphus",
+  "idSet": "607d644b65ea14152438a0de",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b22"
+  },
+  "name": "Gilded Corsage",
+  "idSet": "607d644b65ea14152438a0df",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b23"
+  },
+  "name": "Gust of Nostalgia",
+  "idSet": "607d644b65ea14152438a0df",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b24"
+  },
+  "name": "Copper Compass",
+  "idSet": "607d644b65ea14152438a0df",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b25"
+  },
+  "name": "Goblet of Thundering Deep",
+  "idSet": "607d644b65ea14152438a0df",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b26"
+  },
+  "name": "Wine-Stained Tricorne",
+  "idSet": "607d644b65ea14152438a0df",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b27"
+  },
+  "name": "Instructor's Brooch",
+  "idSet": "607d644b65ea14152438a0e0",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b28"
+  },
+  "name": "Instructor's Feather Accessory",
+  "idSet": "607d644b65ea14152438a0e0",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b29"
+  },
+  "name": "Instructor's Pocket Watch",
+  "idSet": "607d644b65ea14152438a0e0",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b2a"
+  },
+  "name": "Instructor's Tea Cup",
+  "idSet": "607d644b65ea14152438a0e0",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b2b"
+  },
+  "name": "Instructor's Cap",
+  "idSet": "607d644b65ea14152438a0e0",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b2c"
+  },
+  "name": "Lavawalker's Resolution",
+  "idSet": "607d644b65ea14152438a0e1",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b2d"
+  },
+  "name": "Lavawalker's Salvation",
+  "idSet": "607d644b65ea14152438a0e1",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b2e"
+  },
+  "name": "Lavawalker's Torment",
+  "idSet": "607d644b65ea14152438a0e1",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b2f"
+  },
+  "name": "Lavawalker's Epiphany",
+  "idSet": "607d644b65ea14152438a0e1",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b30"
+  },
+  "name": "Lavawalker's Wisdom",
+  "idSet": "607d644b65ea14152438a0e1",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b31"
+  },
+  "name": "Lucky Dog's Clover",
+  "idSet": "607d644b65ea14152438a0e2",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b32"
+  },
+  "name": "Lucky Dog's Eagle Feather",
+  "idSet": "607d644b65ea14152438a0e2",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b33"
+  },
+  "name": "Lucky Dog's Hourglass",
+  "idSet": "607d644b65ea14152438a0e2",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b34"
+  },
+  "name": "Lucky Dog's Goblet",
+  "idSet": "607d644b65ea14152438a0e2",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b35"
+  },
+  "name": "Lucky Dog's Silver Circlet",
+  "idSet": "607d644b65ea14152438a0e2",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b36"
+  },
+  "name": "Maiden's Distant Love",
+  "idSet": "607d644b65ea14152438a0e3",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b37"
+  },
+  "name": "Maiden's Heart-stricken Infatuation",
+  "idSet": "607d644b65ea14152438a0e3",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b38"
+  },
+  "name": "Maiden's Passing Youth",
+  "idSet": "607d644b65ea14152438a0e3",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b39"
+  },
+  "name": "Maiden's Fleeting Leisure",
+  "idSet": "607d644b65ea14152438a0e3",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b3a"
+  },
+  "name": "Maiden's Fading Beauty",
+  "idSet": "607d644b65ea14152438a0e3",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b3b"
+  },
+  "name": "Martial Artist's Red Flower",
+  "idSet": "607d644b65ea14152438a0e4",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b3c"
+  },
+  "name": "Martial Artist's Feather Accessory",
+  "idSet": "607d644b65ea14152438a0e4",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b3d"
+  },
+  "name": "Martial Artist's Water Hourglass",
+  "idSet": "607d644b65ea14152438a0e4",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b3e"
+  },
+  "name": "Martial Artist's Wine Cup",
+  "idSet": "607d644b65ea14152438a0e4",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b3f"
+  },
+  "name": "Martial Artist's Bandana",
+  "idSet": "607d644b65ea14152438a0e4",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b40"
+  },
+  "name": "Royal Flora",
+  "idSet": "607d644b65ea14152438a0e5",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b41"
+  },
+  "name": "Royal Plume",
+  "idSet": "607d644b65ea14152438a0e5",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b42"
+  },
+  "name": "Royal Pocket Watch",
+  "idSet": "607d644b65ea14152438a0e5",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b43"
+  },
+  "name": "Royal Silver Urn",
+  "idSet": "607d644b65ea14152438a0e5",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b44"
+  },
+  "name": "Royal Masque",
+  "idSet": "607d644b65ea14152438a0e5",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b45"
+  },
+  "name": "Heart of Comradeship",
+  "idSet": "607d644b65ea14152438a0e6",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b46"
+  },
+  "name": "Feather of Homecoming",
+  "idSet": "607d644b65ea14152438a0e6",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b47"
+  },
+  "name": "Sundial of the Sojourner",
+  "idSet": "607d644b65ea14152438a0e6",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b48"
+  },
+  "name": "Goblet of the Sojourner",
+  "idSet": "607d644b65ea14152438a0e6",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b49"
+  },
+  "name": "Crown of Parting",
+  "idSet": "607d644b65ea14152438a0e6",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b4a"
+  },
+  "name": "Summer Night's Bloom",
+  "idSet": "607d644b65ea14152438a0e7",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b4b"
+  },
+  "name": "Summer Night's Finale",
+  "idSet": "607d644b65ea14152438a0e7",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b4c"
+  },
+  "name": "Summer Night's Moment",
+  "idSet": "607d644b65ea14152438a0e7",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b4d"
+  },
+  "name": "Summer Night's Waterballoon",
+  "idSet": "607d644b65ea14152438a0e7",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b4e"
+  },
+  "name": "Summer Night's Mask",
+  "idSet": "607d644b65ea14152438a0e7",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b4f"
+  },
+  "name": "Scholar's Bookmark",
+  "idSet": "607d644b65ea14152438a0e8",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b50"
+  },
+  "name": "Scholar's Quill Pen",
+  "idSet": "607d644b65ea14152438a0e8",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b51"
+  },
+  "name": "Scholar's Clock",
+  "idSet": "607d644b65ea14152438a0e8",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b52"
+  },
+  "name": "Scholar's Ink Cup",
+  "idSet": "607d644b65ea14152438a0e8",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b53"
+  },
+  "name": "Scholar's Lens",
+  "idSet": "607d644b65ea14152438a0e8",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b54"
+  },
+  "name": "Exile's Flower",
+  "idSet": "607d644b65ea14152438a0e9",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b55"
+  },
+  "name": "Exile's Feather",
+  "idSet": "607d644b65ea14152438a0e9",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b56"
+  },
+  "name": "Exile's Pocket Watch",
+  "idSet": "607d644b65ea14152438a0e9",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b57"
+  },
+  "name": "Exile's Goblet",
+  "idSet": "607d644b65ea14152438a0e9",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b58"
+  },
+  "name": "Exile's Circlet",
+  "idSet": "607d644b65ea14152438a0e9",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b59"
+  },
+  "name": "Thunderbird's Mercy",
+  "idSet": "607d644b65ea14152438a0ea",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b5a"
+  },
+  "name": "Survivor of Catastrophe",
+  "idSet": "607d644b65ea14152438a0ea",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b5b"
+  },
+  "name": "Hourglass of Thunder",
+  "idSet": "607d644b65ea14152438a0ea",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b5c"
+  },
+  "name": "Omen of Thunderstorm",
+  "idSet": "607d644b65ea14152438a0ea",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b5d"
+  },
+  "name": "Thunder Summoner's Crown",
+  "idSet": "607d644b65ea14152438a0ea",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b5e"
+  },
+  "name": "Martial Artist's Red Flower",
+  "idSet": "607d644b65ea14152438a0eb",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b5f"
+  },
+  "name": "Martial Artist's Feather Accessory",
+  "idSet": "607d644b65ea14152438a0eb",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b60"
+  },
+  "name": "Martial Artist's Water Hourglass",
+  "idSet": "607d644b65ea14152438a0eb",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b61"
+  },
+  "name": "Martial Artist's Wine Cup",
+  "idSet": "607d644b65ea14152438a0eb",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b62"
+  },
+  "name": "Martial Artist's Bandana",
+  "idSet": "607d644b65ea14152438a0eb",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b63"
+  },
+  "name": "Tiny Miracle's Flower",
+  "idSet": "607d644b65ea14152438a0ec",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b64"
+  },
+  "name": "Tiny Miracle's Feather",
+  "idSet": "607d644b65ea14152438a0ec",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b65"
+  },
+  "name": "Tiny Miracle's Hourglass",
+  "idSet": "607d644b65ea14152438a0ec",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b66"
+  },
+  "name": "Tiny Miracle's Goblet",
+  "idSet": "607d644b65ea14152438a0ec",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b67"
+  },
+  "name": "Tiny Miracle's Earrings",
+  "idSet": "607d644b65ea14152438a0ec",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b68"
+  },
+  "name": "Traveling Doctor's Silver Lotus",
+  "idSet": "607d644b65ea14152438a0ed",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b69"
+  },
+  "name": "Traveling Doctor's Owl Feather",
+  "idSet": "607d644b65ea14152438a0ed",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b6a"
+  },
+  "name": "Traveling Doctor's Pocket Watch",
+  "idSet": "607d644b65ea14152438a0ed",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b6b"
+  },
+  "name": "Traveling Doctor's Medicine Pot",
+  "idSet": "607d644b65ea14152438a0ed",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b6c"
+  },
+  "name": "Traveling Doctor's Handkerchief",
+  "idSet": "607d644b65ea14152438a0ed",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b6d"
+  },
+  "name": "In Remembrance of Viridescent Fields",
+  "idSet": "607d644b65ea14152438a0ee",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b6e"
+  },
+  "name": "Viridescent Arrow Feather",
+  "idSet": "607d644b65ea14152438a0ee",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b6f"
+  },
+  "name": "Viridescent Venerer's Determination",
+  "idSet": "607d644b65ea14152438a0ee",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b70"
+  },
+  "name": "Viridescent Venerer's Vessel",
+  "idSet": "607d644b65ea14152438a0ee",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b71"
+  },
+  "name": "Viridescent Venerer's Diadem",
+  "idSet": "607d644b65ea14152438a0ee",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b72"
+  },
+  "name": "Troupe's Dawnlight",
+  "idSet": "607d644b65ea14152438a0ef",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b73"
+  },
+  "name": "Bard's Arrow Feather",
+  "idSet": "607d644b65ea14152438a0ef",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b74"
+  },
+  "name": "Concert's Final Hour",
+  "idSet": "607d644b65ea14152438a0ef",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b75"
+  },
+  "name": "Wanderer's String Kettle",
+  "idSet": "607d644b65ea14152438a0ef",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b76"
+  },
+  "name": "Conductor's Top Hat",
+  "idSet": "607d644b65ea14152438a0ef",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b77"
+  },
+  "name": "Exile's Flower",
+  "idSet": "607d6be80daf882a589ad02a",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b78"
+  },
+  "name": "Exile's Feather",
+  "idSet": "607d6be80daf882a589ad02a",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b79"
+  },
+  "name": "Exile's Pocket Watch",
+  "idSet": "607d6be80daf882a589ad02a",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b7a"
+  },
+  "name": "Exile's Goblet",
+  "idSet": "607d6be80daf882a589ad02a",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b7b"
+  },
+  "name": "Exile's Circlet",
+  "idSet": "607d6be80daf882a589ad02a",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b7c"
+  },
+  "name": "Thunderbird's Mercy",
+  "idSet": "607d6be80daf882a589ad02b",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b7d"
+  },
+  "name": "Survivor of Catastrophe",
+  "idSet": "607d6be80daf882a589ad02b",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b7e"
+  },
+  "name": "Hourglass of Thunder",
+  "idSet": "607d6be80daf882a589ad02b",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b7f"
+  },
+  "name": "Omen of Thunderstorm",
+  "idSet": "607d6be80daf882a589ad02b",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b80"
+  },
+  "name": "Thunder Summoner's Crown",
+  "idSet": "607d6be80daf882a589ad02b",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b81"
+  },
+  "name": "Martial Artist's Red Flower",
+  "idSet": "607d6be80daf882a589ad02c",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b82"
+  },
+  "name": "Martial Artist's Feather Accessory",
+  "idSet": "607d6be80daf882a589ad02c",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b83"
+  },
+  "name": "Martial Artist's Water Hourglass",
+  "idSet": "607d6be80daf882a589ad02c",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b84"
+  },
+  "name": "Martial Artist's Wine Cup",
+  "idSet": "607d6be80daf882a589ad02c",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b85"
+  },
+  "name": "Martial Artist's Bandana",
+  "idSet": "607d6be80daf882a589ad02c",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b86"
+  },
+  "name": "Tiny Miracle's Flower",
+  "idSet": "607d6be80daf882a589ad02d",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b87"
+  },
+  "name": "Tiny Miracle's Feather",
+  "idSet": "607d6be80daf882a589ad02d",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b88"
+  },
+  "name": "Tiny Miracle's Hourglass",
+  "idSet": "607d6be80daf882a589ad02d",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b89"
+  },
+  "name": "Tiny Miracle's Goblet",
+  "idSet": "607d6be80daf882a589ad02d",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b8a"
+  },
+  "name": "Tiny Miracle's Earrings",
+  "idSet": "607d6be80daf882a589ad02d",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b8b"
+  },
+  "name": "Traveling Doctor's Silver Lotus",
+  "idSet": "607d6be80daf882a589ad02e",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b8c"
+  },
+  "name": "Traveling Doctor's Owl Feather",
+  "idSet": "607d6be80daf882a589ad02e",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b8d"
+  },
+  "name": "Traveling Doctor's Pocket Watch",
+  "idSet": "607d6be80daf882a589ad02e",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b8e"
+  },
+  "name": "Traveling Doctor's Medicine Pot",
+  "idSet": "607d6be80daf882a589ad02e",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b8f"
+  },
+  "name": "Traveling Doctor's Handkerchief",
+  "idSet": "607d6be80daf882a589ad02e",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b90"
+  },
+  "name": "In Remembrance of Viridescent Fields",
+  "idSet": "607d6be80daf882a589ad02f",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b91"
+  },
+  "name": "Viridescent Arrow Feather",
+  "idSet": "607d6be80daf882a589ad02f",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b92"
+  },
+  "name": "Viridescent Venerer's Determination",
+  "idSet": "607d6be80daf882a589ad02f",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b93"
+  },
+  "name": "Viridescent Venerer's Vessel",
+  "idSet": "607d6be80daf882a589ad02f",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b94"
+  },
+  "name": "Viridescent Venerer's Diadem",
+  "idSet": "607d6be80daf882a589ad02f",
+  "__v": 0,
+  "type": "bandana"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b95"
+  },
+  "name": "Troupe's Dawnlight",
+  "idSet": "607d6be80daf882a589ad030",
+  "__v": 0,
+  "type": "flower"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b96"
+  },
+  "name": "Bard's Arrow Feather",
+  "idSet": "607d6be80daf882a589ad030",
+  "__v": 0,
+  "type": "feather"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b97"
+  },
+  "name": "Concert's Final Hour",
+  "idSet": "607d6be80daf882a589ad030",
+  "__v": 0,
+  "type": "watch"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b98"
+  },
+  "name": "Wanderer's String Kettle",
+  "idSet": "607d6be80daf882a589ad030",
+  "__v": 0,
+  "type": "goblet"
+},{
+  "_id": {
+    "$oid": "607dce9c32e6cc39d0508b99"
+  },
+  "name": "Conductor's Top Hat",
+  "idSet": "607d6be80daf882a589ad030",
+  "__v": 0,
+  "type": "bandana"
+}]

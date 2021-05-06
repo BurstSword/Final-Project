@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "608aac76ee8f710d88d9a287"
+  },
+  "type": "flower",
+  "stats": [
+    "HP"
+  ]
+},{
+  "_id": {
+    "$oid": "608aac76ee8f710d88d9a288"
+  },
+  "type": "feather",
+  "stats": [
+    "ATK"
+  ]
+},{
+  "_id": {
+    "$oid": "608aac76ee8f710d88d9a289"
+  },
+  "type": "watch",
+  "stats": [
+    "HP",
+    "ATK",
+    "DEF",
+    "Energy Recharge",
+    "Elemental Mastery"
+  ]
+},{
+  "_id": {
+    "$oid": "608aac76ee8f710d88d9a28a"
+  },
+  "type": "goblet",
+  "stats": [
+    "HP",
+    "ATK",
+    "DEF",
+    "Physical DMG Bonus",
+    "Hydro DMG Bonus",
+    "Electro DMG Bonus",
+    "Pyro DMG Bonus",
+    "Anemo DMG Bonus",
+    "Cryo DMG Bonus",
+    "Geo DMG Bonus",
+    "Elemental Mastery"
+  ]
+},{
+  "_id": {
+    "$oid": "608aac76ee8f710d88d9a28b"
+  },
+  "type": "bandana",
+  "stats": [
+    "HP",
+    "ATK",
+    "DEF",
+    "Healing Bonus",
+    "CRIT Rate",
+    "CRIT DMG",
+    "Elemental Mastery"
+  ]
+}]
