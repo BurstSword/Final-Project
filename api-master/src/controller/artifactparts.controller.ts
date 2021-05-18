@@ -13,7 +13,7 @@ class artifactPartController {
      */
     findAllPartsFromSet(req: Request, res: Response) {
         
-        ArtifactPart.find(req.body.idSet).then((ArtifactPartDB) => {
+        ArtifactPart.find({idSet:req.body._id}).then((ArtifactPartDB) => {
             if (!ArtifactPartDB) {
                 return res.status(500).send({
                     status: 500,
@@ -36,29 +36,7 @@ class artifactPartController {
             })
         })
     }
-    findOnePart(req: Request, res: Response) {
-        console.log(req.body)
-        ArtifactPart.findOne({ idSet:req.body.idSet ,type: "flower" }).then((ArtifactPartDB) => {
-            if (!ArtifactPartDB) {
-                return res.status(500).send({
-                    status: 500,
-                    message: "Nothing on DB"
-                })
-            }
-
-            return res.status(200).send({
-                status: 200,
-                message: "Found!",
-                artifacts: ArtifactPartDB
-            })
-        }).catch((err: any) => {
-            return res.status(500).send({
-                status: 500,
-                message: "DB Error",
-                error: err
-            })
-        })
-    }
+    
 }
 
 export default artifactPartController

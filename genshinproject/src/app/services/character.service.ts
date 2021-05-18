@@ -17,7 +17,6 @@ export class CharacterService {
   }
 
   findImg(name:string){
-    console.log(environment.assetsURL + `characters/${name}/portrait`);
     return this._http.get<any>(environment.assetsURL + `characters/${name}/portrait`);
   }
 }

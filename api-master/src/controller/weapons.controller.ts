@@ -18,7 +18,30 @@ class weaponController {
             return res.status(200).send({
                 status: 200,
                 message: "Found!",
-                artifacts: WeaponDB
+                weapons: WeaponDB
+            })
+        }).catch((err: any) => {
+            return res.status(500).send({
+                status: 500,
+                message: "DB Error",
+                error: err
+            })
+        })
+    }
+
+    findWeaponsByType(_req: Request, res: Response) {
+        Weapon.find({type:_req.body.type}).then((WeaponDB) => {
+            if (!WeaponDB) {
+                return res.status(500).send({
+                    status: 500,
+                    message: "Nothing on DB"
+                })
+            }
+
+            return res.status(200).send({
+                status: 200,
+                message: "Found!",
+                weapons: WeaponDB
             })
         }).catch((err: any) => {
             return res.status(500).send({

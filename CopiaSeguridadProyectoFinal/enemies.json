@@ -1,1036 +1,1023 @@
 [{
-  "_id": {
-    "$oid": "607d68f9c3a1bb3b148f3828"
-  },
-  "elements": [
-    "Hydro",
-    "Pyro",
-    "Cryo"
-  ],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
+        "_id": {
+            "$oid": "607d68f9c3a1bb3b148f3828"
+        },
+        "elements": [
+            "Hydro",
+            "Pyro",
+            "Cryo"
+        ],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Dead Ley Line Branch",
+                "rarity": 2,
+                "minimum-level": 1
+            },
+            {
+                "name": "Dead Ley Line Leaves",
+                "rarity": 3,
+                "minimum-level": 40
+            },
+            {
+                "name": "Ley Line Sprouts",
+                "rarity": 4,
+                "minimum-level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "abyss-mage",
+        "name": "Abyss Mage",
+        "description": "Abyss creatures who can command the power of the elements in combat to a certain extent. For unknown reasons, abyss mages are able to communicate with the hilichurls, thus enabling them to manipulate their minds easily. They say abyss mages utter a long-forgotten language from which they draw magical power.",
+        "region": "Global",
+        "type": "Elite Enemies",
+        "family": "The Abyss",
+        "faction": "Abyss Order",
+        "createdAt": {
+            "$date": "2021-04-19T11:26:49.539Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:26:49.539Z"
+        },
+        "__v": 0
     },
     {
-      "name": "Instructor",
-      "rarity": "3/4"
+        "_id": {
+            "$oid": "607d691cc3a1bb3b148f3829"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Chaos Device",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Chaos Circuit",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Chaos Core",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "ruin-grazer",
+        "name": "Ruin Grazer",
+        "description": "A giant war machine resembling a Ruin Guard. They are far more stronger and faster than their brethren.",
+        "region": "Dragonspine",
+        "type": "Elite Enemies",
+        "family": "Automatons",
+        "faction": "Abyss Order",
+        "mora_gained": 600,
+        "createdAt": {
+            "$date": "2021-04-19T11:27:24.622Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:27:24.622Z"
+        },
+        "__v": 0
     },
     {
-      "name": "The Exile",
-      "rarity": "3/4"
+        "_id": {
+            "$oid": "607d692bc3a1bb3b148f382a"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Chaos Device",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Chaos Circuit",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Chaos Core",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "ruin-guard",
+        "name": "Ruin Guard",
+        "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
+        "region": "Global",
+        "type": "Elite Enemies",
+        "family": "Automatons",
+        "faction": "Abyss Order",
+        "mora_gained": 200,
+        "createdAt": {
+            "$date": "2021-04-19T11:27:39.830Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:27:39.830Z"
+        },
+        "__v": 0
     },
     {
-      "name": "Travelling Doctor",
-      "rarity": "3"
+        "_id": {
+            "$oid": "607d6936c3a1bb3b148f382b"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Chaos Device",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Chaos Circuit",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Chaos Core",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "ruin-guard",
+        "name": "Ruin Guard",
+        "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
+        "region": "Global",
+        "type": "Elite Enemies",
+        "family": "Automatons",
+        "faction": "Abyss Order",
+        "mora_gained": 200,
+        "createdAt": {
+            "$date": "2021-04-19T11:27:50.902Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:27:50.902Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d6941c3a1bb3b148f382c"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Chaos Device",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Chaos Circuit",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Chaos Core",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "ruin-guard",
+        "name": "Ruin Guard",
+        "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
+        "region": "Global",
+        "type": "Elite Enemies",
+        "family": "Automatons",
+        "faction": "Abyss Order",
+        "mora_gained": 200,
+        "createdAt": {
+            "$date": "2021-04-19T11:28:01.917Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:28:01.917Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d694ac3a1bb3b148f382d"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Chaos Device",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Chaos Circuit",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Chaos Core",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "ruin-guard",
+        "name": "Ruin Guard",
+        "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
+        "region": "Global",
+        "type": "Elite Enemies",
+        "family": "Automatons",
+        "faction": "Abyss Order",
+        "mora_gained": 200,
+        "createdAt": {
+            "$date": "2021-04-19T11:28:10.871Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:28:10.871Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d6952c3a1bb3b148f382e"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Chaos Device",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Chaos Circuit",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Chaos Core",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "ruin-guard",
+        "name": "Ruin Guard",
+        "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
+        "region": "Global",
+        "type": "Elite Enemies",
+        "family": "Automatons",
+        "faction": "Abyss Order",
+        "mora_gained": 200,
+        "createdAt": {
+            "$date": "2021-04-19T11:28:18.212Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:28:18.212Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d695ac3a1bb3b148f382f"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Chaos Device",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Chaos Circuit",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Chaos Core",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "ruin-guard",
+        "name": "Ruin Guard",
+        "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
+        "region": "Global",
+        "type": "Elite Enemies",
+        "family": "Automatons",
+        "faction": "Abyss Order",
+        "mora_gained": 200,
+        "createdAt": {
+            "$date": "2021-04-19T11:28:26.091Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:28:26.091Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d6965c3a1bb3b148f3830"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [{
+                "name": "Damaged Mask",
+                "rarity": 1,
+                "minimum_level": 1
+            },
+            {
+                "name": "Stained Mask",
+                "rarity": 2,
+                "minimum_level": 40
+            },
+            {
+                "name": "Ominous Mask",
+                "rarity": 3,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "hilichurl",
+        "name": "Hilichurl",
+        "description": "The primitive wandering inhabitants of Teyvat's wildernesses. They look very similar to humanity but seem to have lost both their intellect and spirituality. Their presence on the continent has been recorded for over a thousand years, and yet they have neither history nor civilization. Since the pitch-black calamity from five hundred years ago, they have begun to spread in large numbers across the land. They are not very strong, and they lack organization, but they nonetheless bring sizable trouble to humans every once in a while.",
+        "region": "Global",
+        "type": "Common Enemies",
+        "family": "Hilichurls",
+        "faction": "Abyss Order",
+        "createdAt": {
+            "$date": "2021-04-19T11:28:37.477Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:28:37.477Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d696fc3a1bb3b148f3831"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [{
+                "name": "Damaged Mask",
+                "rarity": 1,
+                "minimum_level": 1
+            },
+            {
+                "name": "Stained Mask",
+                "rarity": 2,
+                "minimum_level": 40
+            },
+            {
+                "name": "Ominous Mask",
+                "rarity": 3,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "hilichurl",
+        "name": "Hilichurl",
+        "description": "The primitive wandering inhabitants of Teyvat's wildernesses. They look very similar to humanity but seem to have lost both their intellect and spirituality. Their presence on the continent has been recorded for over a thousand years, and yet they have neither history nor civilization. Since the pitch-black calamity from five hundred years ago, they have begun to spread in large numbers across the land. They are not very strong, and they lack organization, but they nonetheless bring sizable trouble to humans every once in a while.",
+        "region": "Global",
+        "type": "Common Enemies",
+        "family": "Hilichurls",
+        "faction": "Abyss Order",
+        "createdAt": {
+            "$date": "2021-04-19T11:28:47.028Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:28:47.028Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d697fc3a1bb3b148f3832"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [{
+                "name": "Heavy Horn",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Black Bronze Horn",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Black Crystal Horn",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "lawachurl",
+        "description": "A Mitachurl that has mutated due to an accumulation of a large amount of elements in its body. They are bigger, stronger, and absolutely ferocious. Hilichurls worship no gods and follow no order or discipline. The strongest and the most ferocious one among them is seen as fit to lead the tribe.",
+        "region": "Multiple",
+        "type": "Elite Enemies",
+        "family": "Hilichurls",
+        "faction": "Abyss Order",
+        "createdAt": {
+            "$date": "2021-04-19T11:29:03.400Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:29:03.400Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d6987c3a1bb3b148f3833"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Heavy Horn",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Black Bronze Horn",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Black Crystal Horn",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "mitachurl",
+        "name": "Mitacurl",
+        "description": "The most formidable warriors of the Hilichurl tribes. Fighting and eating meat are the two most important things to Hilichurls, because those are what make them grow stronger. All young Hilichurls dream of growing up to become a big and strong Mitachurl, because that way they can eat more meat, and fight more battles.",
+        "region": "Global",
+        "type": "Elite Enemies",
+        "family": "Hilichurls",
+        "faction": "Abyss Order",
+        "createdAt": {
+            "$date": "2021-04-19T11:29:11.974Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:29:11.974Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d6990c3a1bb3b148f3834"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "eye-of-the-storm",
+        "name": "Eye of the Storm",
+        "description": "The corporeal form of extremely high-quality Anemo energies. The formation of an Eye of the Storm indicates that the elemental ley lines of a region are blocked, which has led to siltation. Its reckless, heedless wielding of storms that all but sweeps people off their feet may be due to its nature as a symbol of the world stricken by malaise.",
+        "region": "Monstadt",
+        "type": "Elite Enemies",
+        "family": "Elemental Lifeforms",
+        "mora_gained": 0,
+        "createdAt": {
+            "$date": "2021-04-19T11:29:20.373Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:29:20.373Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d6998c3a1bb3b148f3835"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Fragile Bone Shard",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Sturdy Bone Shard",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Fossilized Bone Shard",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "geovishap",
+        "name": "Geovishap",
+        "description": "A mature Geovishap. It is said that after many years have passed, Geovishap Hatchlings will shed the armor that originally protected them and become Geovishaps. However these two and the older, greater Primo Geovishaps have spent many years hibernating under the mountains and have only emerged and become active in recent times. As such, none can personally attest to have witnessed or recorded such a thing in person.",
+        "region": "Liyue",
+        "type": "Elite Enemies",
+        "family": "Mythical Beasts",
+        "createdAt": {
+            "$date": "2021-04-19T11:29:28.647Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:29:28.647Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d69a0c3a1bb3b148f3836"
+        },
+        "elements": [],
+        "artifacts": [{
+                "name": "Berserker",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Instructor",
+                "rarity": "3/4"
+            },
+            {
+                "name": "The Exile",
+                "rarity": "3/4"
+            },
+            {
+                "name": "Travelling Doctor",
+                "rarity": "3"
+            }
+        ],
+        "drops": [{
+                "name": "Fragile Bone Shard",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Sturdy Bone Shard",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Fossilized Bone Shard",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "geovishap-hatchling",
+        "name": "Geovishap Hatchling",
+        "description": "A young vishap with a hard Geo exoskeleton. Vishaps are exceptionally agile creatures that one would be wise not to underestimate in battle. Experts from Sumeru Arcademia believe that they become dragons when fully grown. By avoiding predators and natural disasters, perhaps they can even live long enough to become formidable beasts that reign over entire mountains.",
+        "region": "Liyue",
+        "type": "Common Enemies",
+        "family": "Mythical Beasts",
+        "createdAt": {
+            "$date": "2021-04-19T11:29:36.353Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:29:36.353Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d69a7c3a1bb3b148f3837"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [
+            "Chilled Meat"
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [],
+        "id": "the-great-snowboar-king",
+        "name": "The Great Snowboar King",
+        "description": "N/A",
+        "region": "Dragonspine",
+        "type": "Elite Enemies",
+        "family": "Unique Enemies",
+        "createdAt": {
+            "$date": "2021-04-19T11:29:43.811Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:29:43.811Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d69b0c3a1bb3b148f3838"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [{
+                "name": "Divining Scroll",
+                "rarity": 2,
+                "minimum_level": 1
+            },
+            {
+                "name": "Sealed Scroll",
+                "rarity": 3,
+                "minimum_level": 40
+            },
+            {
+                "name": "Forbidden Curse Scroll",
+                "rarity": 4,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [{
+                "element": "anemo",
+                "description": "A wizened, mumbling hilichurl, one that spreads the message of Anemo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. Their ability to command the flowing winds stems from dark, forgotten memories."
+            },
+            {
+                "element": "geo",
+                "description": "A wizened, mumbling hilichurl, one that listens to the strength of Geo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. To the persevering mountains, these old hilichurls are but children, but their memories and experiences have guided them towards gaining power over rock and stone."
+            },
+            {
+                "element": "dendro",
+                "description": "A wizened, mumbling hilichurl, one that awakens the might of Dendro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. A grudge stirs beneath that mask, and poison ivy sprouts as hateful whispers issue forth from it."
+            },
+            {
+                "element": "hydro",
+                "description": "A wizened, mumbling hilichurl, one that chants of the power of Hydro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. What sort of life would lead to such simple creatures being able to summon water and rains?"
+            },
+            {
+                "element": "cryo",
+                "description": "A wizened, mumbling hilichurl, one that calls upon the bite of Cryo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. These shamans remember the frosty chants and are even more skilled in the art of using them to entrap their foes."
+            }
+        ],
+        "descriptions": [],
+        "id": "samachurl",
+        "name": "Samachurl",
+        "region": "Global",
+        "type": "Common Enemies",
+        "family": "Hilichurls",
+        "faction": "Abyss Order",
+        "createdAt": {
+            "$date": "2021-04-19T11:29:52.822Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:29:52.822Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d69b9c3a1bb3b148f3839"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [{
+                "name": "Slime Condensate",
+                "rarity": 1,
+                "minimum_level": 1
+            },
+            {
+                "name": "Slime Secretions",
+                "rarity": 2,
+                "minimum_level": 40
+            },
+            {
+                "name": "Slime Concentrate",
+                "rarity": 3,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [{
+                "element": "anemo",
+                "description": "A wizened, mumbling hilichurl, one that spreads the message of Anemo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. Their ability to command the flowing winds stems from dark, forgotten memories."
+            },
+            {
+                "element": "geo",
+                "description": "A wizened, mumbling hilichurl, one that listens to the strength of Geo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. To the persevering mountains, these old hilichurls are but children, but their memories and experiences have guided them towards gaining power over rock and stone."
+            },
+            {
+                "element": "dendro",
+                "description": "A wizened, mumbling hilichurl, one that awakens the might of Dendro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. A grudge stirs beneath that mask, and poison ivy sprouts as hateful whispers issue forth from it."
+            },
+            {
+                "element": "hydro",
+                "description": "A wizened, mumbling hilichurl, one that chants of the power of Hydro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. What sort of life would lead to such simple creatures being able to summon water and rains?"
+            },
+            {
+                "element": "cryo",
+                "description": "A wizened, mumbling hilichurl, one that calls upon the bite of Cryo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. These shamans remember the frosty chants and are even more skilled in the art of using them to entrap their foes."
+            }
+        ],
+        "descriptions": [],
+        "id": "slime",
+        "name": "Slime",
+        "region": "Global",
+        "description": "A pudgy elemental life form. It's said that desserts made from slimes of different elements will have incredibly distinctive flavors.",
+        "type": "Common Enemies",
+        "family": "Slime",
+        "createdAt": {
+            "$date": "2021-04-19T11:30:01.654Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:30:01.654Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d69c2c3a1bb3b148f383a"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [{
+                "name": "Treasure Hoarder Insignia",
+                "rarity": 1,
+                "minimum_level": 1
+            },
+            {
+                "name": "Silver Raven Insignia",
+                "rarity": 2,
+                "minimum_level": 40
+            },
+            {
+                "name": "Golden Raven Insignia",
+                "rarity": 3,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [],
+        "descriptions": [{
+                "name": "Scouts",
+                "description": "Common Treasure Hoarders who prefer to throw knives at their targets but will deliver a swift roundhouse kick to anyone who gets too close. Right before they throw a knife, that knife will shine giving players a warning to dodge it."
+            },
+            {
+                "name": "Marksmen",
+                "description": "Standard ranged Treasure Hoarders who use crossbows. Being a pure long ranged fighter, they have no defense in melee range. They seem to be the quietest of the Hoarders, only blurting out words upon defeat."
+            },
+            {
+                "name": "Potioneers",
+                "description": "Treasure Hoarders who throw elemental potions that leave a puddle of a certain element on the ground. Judging from their quotes, they're possibly alchemists who perform illegal experiments, and treat the Traveler as a test subject. Like Scouts they will deliver a swift kick at close range."
+            },
+            {
+                "name": "Gravediggers",
+                "description": "Treasure Hoarders that wield shovels and will dig out soil as a ranged attack that will impair the target's sight upon impact. They are about the same height as Pugilists/Crushers but are burly in build."
+            },
+            {
+                "name": "Puglists",
+                "description": "Tall and muscular Treasure Hoarders that utilize punches in combat. They alternate between 2-slug combo, or a full combo consisting of 2-slug strikes followed by a lunging punch. They will also use the very same lunging punch at a distance."
+            },
+            {
+                "name": "Crushers",
+                "description": "Tall and muscular Treasure Hoarders who use hammers to fight their opponents, their swings are slow, but it deals large amount of damage if hit."
+            },
+            {
+                "name": "Handymen",
+                "description": "Tough and burly Treasure Hoarders who like Pugilists fight unarmed, but with kicks instead of punches. They alternate between a single or a 3-swing kick combo and utilize a dropkick at a distance."
+            },
+            {
+                "name": "Seamen",
+                "description": "Treasure Hoarders armed with oars and are of the same build as Gravediggers and Handymen. At close range, they swing as slowly as a Gravedigger knocking anyone down if hit, after attacking two times (or if they are at a distance), they will will swing their oars wildly at their opponents that can deal lots of damage if not dodged on time, however the resulting attack will leave them winded and leave them open to attack until they recover."
+            }
+        ],
+        "id": "treasure-hoarder",
+        "name": "Treasure Hoarder",
+        "region": "Global",
+        "type": "Common Enemies",
+        "family": "Treasure Hoarders",
+        "createdAt": {
+            "$date": "2021-04-19T11:30:10.593Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:30:10.593Z"
+        },
+        "__v": 0
+    },
+    {
+        "_id": {
+            "$oid": "607d69cbc3a1bb3b148f383b"
+        },
+        "elements": [],
+        "artifacts": [],
+        "drops": [{
+                "name": "Whopperflower Nectar",
+                "rarity": 1,
+                "minimum_level": 1
+            },
+            {
+                "name": "Shimmering Nectar",
+                "rarity": 2,
+                "minimum_level": 40
+            },
+            {
+                "name": "Energy Nectar",
+                "rarity": 3,
+                "minimum_level": 60
+            }
+        ],
+        "elemental_descriptions": [{
+                "element": "anemo",
+                "description": "A wizened, mumbling hilichurl, one that spreads the message of Anemo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. Their ability to command the flowing winds stems from dark, forgotten memories."
+            },
+            {
+                "element": "geo",
+                "description": "A wizened, mumbling hilichurl, one that listens to the strength of Geo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. To the persevering mountains, these old hilichurls are but children, but their memories and experiences have guided them towards gaining power over rock and stone."
+            },
+            {
+                "element": "dendro",
+                "description": "A wizened, mumbling hilichurl, one that awakens the might of Dendro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. A grudge stirs beneath that mask, and poison ivy sprouts as hateful whispers issue forth from it."
+            },
+            {
+                "element": "hydro",
+                "description": "A wizened, mumbling hilichurl, one that chants of the power of Hydro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. What sort of life would lead to such simple creatures being able to summon water and rains?"
+            },
+            {
+                "element": "cryo",
+                "description": "A wizened, mumbling hilichurl, one that calls upon the bite of Cryo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. These shamans remember the frosty chants and are even more skilled in the art of using them to entrap their foes."
+            }
+        ],
+        "descriptions": [],
+        "id": "whopperflower",
+        "name": "Whopperflower",
+        "region": "Global",
+        "description": "A bizarre mimetic plant monster that harnesses the elements in combat. These plants lurk under the surface and ambush unsuspecting prey. With the passage of years, sufficient nutrition, and the right environment, it could even take root somewhere and grow into a giant tree that sways and spews elemental power...",
+        "type": "Common Enemies",
+        "family": "Mystical Beasts",
+        "createdAt": {
+            "$date": "2021-04-19T11:30:19.164Z"
+        },
+        "updatedAt": {
+            "$date": "2021-04-19T11:30:19.164Z"
+        },
+        "__v": 0
     }
-  ],
-  "drops": [
-    {
-      "name": "Dead Ley Line Branch",
-      "rarity": 2,
-      "minimum-level": 1
-    },
-    {
-      "name": "Dead Ley Line Leaves",
-      "rarity": 3,
-      "minimum-level": 40
-    },
-    {
-      "name": "Ley Line Sprouts",
-      "rarity": 4,
-      "minimum-level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "abyss-mage",
-  "name": "Abyss Mage",
-  "description": "Abyss creatures who can command the power of the elements in combat to a certain extent. For unknown reasons, abyss mages are able to communicate with the hilichurls, thus enabling them to manipulate their minds easily. They say abyss mages utter a long-forgotten language from which they draw magical power.",
-  "region": "Global",
-  "type": "Elite Enemies",
-  "family": "The Abyss",
-  "faction": "Abyss Order",
-  "createdAt": {
-    "$date": "2021-04-19T11:26:49.539Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:26:49.539Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d691cc3a1bb3b148f3829"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Chaos Device",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Chaos Circuit",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Chaos Core",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "ruin-grazer",
-  "name": "Ruin Grazer",
-  "description": "A giant war machine resembling a Ruin Guard. They are far more stronger and faster than their brethren.",
-  "region": "Dragonspine",
-  "type": "Elite Enemies",
-  "family": "Automatons",
-  "faction": "Abyss Order",
-  "mora_gained": 600,
-  "createdAt": {
-    "$date": "2021-04-19T11:27:24.622Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:27:24.622Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d692bc3a1bb3b148f382a"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Chaos Device",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Chaos Circuit",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Chaos Core",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "ruin-guard",
-  "name": "Ruin Guard",
-  "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
-  "region": "Global",
-  "type": "Elite Enemies",
-  "family": "Automatons",
-  "faction": "Abyss Order",
-  "mora_gained": 200,
-  "createdAt": {
-    "$date": "2021-04-19T11:27:39.830Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:27:39.830Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d6936c3a1bb3b148f382b"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Chaos Device",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Chaos Circuit",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Chaos Core",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "ruin-guard",
-  "name": "Ruin Guard",
-  "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
-  "region": "Global",
-  "type": "Elite Enemies",
-  "family": "Automatons",
-  "faction": "Abyss Order",
-  "mora_gained": 200,
-  "createdAt": {
-    "$date": "2021-04-19T11:27:50.902Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:27:50.902Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d6941c3a1bb3b148f382c"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Chaos Device",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Chaos Circuit",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Chaos Core",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "ruin-guard",
-  "name": "Ruin Guard",
-  "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
-  "region": "Global",
-  "type": "Elite Enemies",
-  "family": "Automatons",
-  "faction": "Abyss Order",
-  "mora_gained": 200,
-  "createdAt": {
-    "$date": "2021-04-19T11:28:01.917Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:28:01.917Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d694ac3a1bb3b148f382d"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Chaos Device",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Chaos Circuit",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Chaos Core",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "ruin-guard",
-  "name": "Ruin Guard",
-  "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
-  "region": "Global",
-  "type": "Elite Enemies",
-  "family": "Automatons",
-  "faction": "Abyss Order",
-  "mora_gained": 200,
-  "createdAt": {
-    "$date": "2021-04-19T11:28:10.871Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:28:10.871Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d6952c3a1bb3b148f382e"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Chaos Device",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Chaos Circuit",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Chaos Core",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "ruin-guard",
-  "name": "Ruin Guard",
-  "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
-  "region": "Global",
-  "type": "Elite Enemies",
-  "family": "Automatons",
-  "faction": "Abyss Order",
-  "mora_gained": 200,
-  "createdAt": {
-    "$date": "2021-04-19T11:28:18.212Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:28:18.212Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d695ac3a1bb3b148f382f"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Chaos Device",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Chaos Circuit",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Chaos Core",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "ruin-guard",
-  "name": "Ruin Guard",
-  "description": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins. Though that hypothesis does not explain why they would choose to employ explosive weaponry inside the very ruins they were designed to protect",
-  "region": "Global",
-  "type": "Elite Enemies",
-  "family": "Automatons",
-  "faction": "Abyss Order",
-  "mora_gained": 200,
-  "createdAt": {
-    "$date": "2021-04-19T11:28:26.091Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:28:26.091Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d6965c3a1bb3b148f3830"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [
-    {
-      "name": "Damaged Mask",
-      "rarity": 1,
-      "minimum_level": 1
-    },
-    {
-      "name": "Stained Mask",
-      "rarity": 2,
-      "minimum_level": 40
-    },
-    {
-      "name": "Ominous Mask",
-      "rarity": 3,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "hilichurl",
-  "name": "Hilichurl",
-  "description": "The primitive wandering inhabitants of Teyvat's wildernesses. They look very similar to humanity but seem to have lost both their intellect and spirituality. Their presence on the continent has been recorded for over a thousand years, and yet they have neither history nor civilization. Since the pitch-black calamity from five hundred years ago, they have begun to spread in large numbers across the land. They are not very strong, and they lack organization, but they nonetheless bring sizable trouble to humans every once in a while.",
-  "region": "Global",
-  "type": "Common Enemies",
-  "family": "Hilichurls",
-  "faction": "Abyss Order",
-  "createdAt": {
-    "$date": "2021-04-19T11:28:37.477Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:28:37.477Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d696fc3a1bb3b148f3831"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [
-    {
-      "name": "Damaged Mask",
-      "rarity": 1,
-      "minimum_level": 1
-    },
-    {
-      "name": "Stained Mask",
-      "rarity": 2,
-      "minimum_level": 40
-    },
-    {
-      "name": "Ominous Mask",
-      "rarity": 3,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "hilichurl",
-  "name": "Hilichurl",
-  "description": "The primitive wandering inhabitants of Teyvat's wildernesses. They look very similar to humanity but seem to have lost both their intellect and spirituality. Their presence on the continent has been recorded for over a thousand years, and yet they have neither history nor civilization. Since the pitch-black calamity from five hundred years ago, they have begun to spread in large numbers across the land. They are not very strong, and they lack organization, but they nonetheless bring sizable trouble to humans every once in a while.",
-  "region": "Global",
-  "type": "Common Enemies",
-  "family": "Hilichurls",
-  "faction": "Abyss Order",
-  "createdAt": {
-    "$date": "2021-04-19T11:28:47.028Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:28:47.028Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d697fc3a1bb3b148f3832"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [
-    {
-      "name": "Heavy Horn",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Black Bronze Horn",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Black Crystal Horn",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "lawachurl",
-  "description": "A Mitachurl that has mutated due to an accumulation of a large amount of elements in its body. They are bigger, stronger, and absolutely ferocious. Hilichurls worship no gods and follow no order or discipline. The strongest and the most ferocious one among them is seen as fit to lead the tribe.",
-  "region": "Multiple",
-  "type": "Elite Enemies",
-  "family": "Hilichurls",
-  "faction": "Abyss Order",
-  "createdAt": {
-    "$date": "2021-04-19T11:29:03.400Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:29:03.400Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d6987c3a1bb3b148f3833"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Heavy Horn",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Black Bronze Horn",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Black Crystal Horn",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "mitachurl",
-  "name": "Mitacurl",
-  "description": "The most formidable warriors of the Hilichurl tribes. Fighting and eating meat are the two most important things to Hilichurls, because those are what make them grow stronger. All young Hilichurls dream of growing up to become a big and strong Mitachurl, because that way they can eat more meat, and fight more battles.",
-  "region": "Global",
-  "type": "Elite Enemies",
-  "family": "Hilichurls",
-  "faction": "Abyss Order",
-  "createdAt": {
-    "$date": "2021-04-19T11:29:11.974Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:29:11.974Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d6990c3a1bb3b148f3834"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "eye-of-the-storm",
-  "name": "Eye of the Storm",
-  "description": "The corporeal form of extremely high-quality Anemo energies. The formation of an Eye of the Storm indicates that the elemental ley lines of a region are blocked, which has led to siltation. Its reckless, heedless wielding of storms that all but sweeps people off their feet may be due to its nature as a symbol of the world stricken by malaise.",
-  "region": "Monstadt",
-  "type": "Elite Enemies",
-  "family": "Elemental Lifeforms",
-  "mora_gained": 0,
-  "createdAt": {
-    "$date": "2021-04-19T11:29:20.373Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:29:20.373Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d6998c3a1bb3b148f3835"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Fragile Bone Shard",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Sturdy Bone Shard",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Fossilized Bone Shard",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "geovishap",
-  "name": "Geovishap",
-  "description": "A mature Geovishap. It is said that after many years have passed, Geovishap Hatchlings will shed the armor that originally protected them and become Geovishaps. However these two and the older, greater Primo Geovishaps have spent many years hibernating under the mountains and have only emerged and become active in recent times. As such, none can personally attest to have witnessed or recorded such a thing in person.",
-  "region": "Liyue",
-  "type": "Elite Enemies",
-  "family": "Mythical Beasts",
-  "createdAt": {
-    "$date": "2021-04-19T11:29:28.647Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:29:28.647Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d69a0c3a1bb3b148f3836"
-  },
-  "elements": [],
-  "artifacts": [
-    {
-      "name": "Berserker",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Instructor",
-      "rarity": "3/4"
-    },
-    {
-      "name": "The Exile",
-      "rarity": "3/4"
-    },
-    {
-      "name": "Travelling Doctor",
-      "rarity": "3"
-    }
-  ],
-  "drops": [
-    {
-      "name": "Fragile Bone Shard",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Sturdy Bone Shard",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Fossilized Bone Shard",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "geovishap-hatchling",
-  "name": "Geovishap Hatchling",
-  "description": "A young vishap with a hard Geo exoskeleton. Vishaps are exceptionally agile creatures that one would be wise not to underestimate in battle. Experts from Sumeru Arcademia believe that they become dragons when fully grown. By avoiding predators and natural disasters, perhaps they can even live long enough to become formidable beasts that reign over entire mountains.",
-  "region": "Liyue",
-  "type": "Common Enemies",
-  "family": "Mythical Beasts",
-  "createdAt": {
-    "$date": "2021-04-19T11:29:36.353Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:29:36.353Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d69a7c3a1bb3b148f3837"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [
-    "Chilled Meat"
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [],
-  "id": "the-great-snowboar-king",
-  "name": "The Great Snowboar King",
-  "description": "N/A",
-  "region": "Dragonspine",
-  "type": "Elite Enemies",
-  "family": "Unique Enemies",
-  "createdAt": {
-    "$date": "2021-04-19T11:29:43.811Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:29:43.811Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d69b0c3a1bb3b148f3838"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [
-    {
-      "name": "Divining Scroll",
-      "rarity": 2,
-      "minimum_level": 1
-    },
-    {
-      "name": "Sealed Scroll",
-      "rarity": 3,
-      "minimum_level": 40
-    },
-    {
-      "name": "Forbidden Curse Scroll",
-      "rarity": 4,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [
-    {
-      "element": "anemo",
-      "description": "A wizened, mumbling hilichurl, one that spreads the message of Anemo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. Their ability to command the flowing winds stems from dark, forgotten memories."
-    },
-    {
-      "element": "geo",
-      "description": "A wizened, mumbling hilichurl, one that listens to the strength of Geo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. To the persevering mountains, these old hilichurls are but children, but their memories and experiences have guided them towards gaining power over rock and stone."
-    },
-    {
-      "element": "dendro",
-      "description": "A wizened, mumbling hilichurl, one that awakens the might of Dendro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. A grudge stirs beneath that mask, and poison ivy sprouts as hateful whispers issue forth from it."
-    },
-    {
-      "element": "hydro",
-      "description": "A wizened, mumbling hilichurl, one that chants of the power of Hydro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. What sort of life would lead to such simple creatures being able to summon water and rains?"
-    },
-    {
-      "element": "cryo",
-      "description": "A wizened, mumbling hilichurl, one that calls upon the bite of Cryo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. These shamans remember the frosty chants and are even more skilled in the art of using them to entrap their foes."
-    }
-  ],
-  "descriptions": [],
-  "id": "samachurl",
-  "name": "Samachurl",
-  "region": "Global",
-  "type": "Common Enemies",
-  "family": "Hilichurls",
-  "faction": "Abyss Order",
-  "createdAt": {
-    "$date": "2021-04-19T11:29:52.822Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:29:52.822Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d69b9c3a1bb3b148f3839"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [
-    {
-      "name": "Slime Condensate",
-      "rarity": 1,
-      "minimum_level": 1
-    },
-    {
-      "name": "Slime Secretions",
-      "rarity": 2,
-      "minimum_level": 40
-    },
-    {
-      "name": "Slime Concentrate",
-      "rarity": 3,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [
-    {
-      "element": "anemo",
-      "description": "A wizened, mumbling hilichurl, one that spreads the message of Anemo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. Their ability to command the flowing winds stems from dark, forgotten memories."
-    },
-    {
-      "element": "geo",
-      "description": "A wizened, mumbling hilichurl, one that listens to the strength of Geo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. To the persevering mountains, these old hilichurls are but children, but their memories and experiences have guided them towards gaining power over rock and stone."
-    },
-    {
-      "element": "dendro",
-      "description": "A wizened, mumbling hilichurl, one that awakens the might of Dendro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. A grudge stirs beneath that mask, and poison ivy sprouts as hateful whispers issue forth from it."
-    },
-    {
-      "element": "hydro",
-      "description": "A wizened, mumbling hilichurl, one that chants of the power of Hydro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. What sort of life would lead to such simple creatures being able to summon water and rains?"
-    },
-    {
-      "element": "cryo",
-      "description": "A wizened, mumbling hilichurl, one that calls upon the bite of Cryo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. These shamans remember the frosty chants and are even more skilled in the art of using them to entrap their foes."
-    }
-  ],
-  "descriptions": [],
-  "id": "slime",
-  "name": "Slime",
-  "region": "Global",
-  "description": "A pudgy elemental life form. It's said that desserts made from slimes of different elements will have incredibly distinctive flavors.",
-  "type": "Common Enemies",
-  "family": "Slime",
-  "createdAt": {
-    "$date": "2021-04-19T11:30:01.654Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:30:01.654Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d69c2c3a1bb3b148f383a"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [
-    {
-      "name": "Treasure Hoarder Insignia",
-      "rarity": 1,
-      "minimum_level": 1
-    },
-    {
-      "name": "Silver Raven Insignia",
-      "rarity": 2,
-      "minimum_level": 40
-    },
-    {
-      "name": "Golden Raven Insignia",
-      "rarity": 3,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [],
-  "descriptions": [
-    {
-      "name": "Scouts",
-      "description": "Common Treasure Hoarders who prefer to throw knives at their targets but will deliver a swift roundhouse kick to anyone who gets too close. Right before they throw a knife, that knife will shine giving players a warning to dodge it."
-    },
-    {
-      "name": "Marksmen",
-      "description": "Standard ranged Treasure Hoarders who use crossbows. Being a pure long ranged fighter, they have no defense in melee range. They seem to be the quietest of the Hoarders, only blurting out words upon defeat."
-    },
-    {
-      "name": "Potioneers",
-      "description": "Treasure Hoarders who throw elemental potions that leave a puddle of a certain element on the ground. Judging from their quotes, they're possibly alchemists who perform illegal experiments, and treat the Traveler as a test subject. Like Scouts they will deliver a swift kick at close range."
-    },
-    {
-      "name": "Gravediggers",
-      "description": "Treasure Hoarders that wield shovels and will dig out soil as a ranged attack that will impair the target's sight upon impact. They are about the same height as Pugilists/Crushers but are burly in build."
-    },
-    {
-      "name": "Puglists",
-      "description": "Tall and muscular Treasure Hoarders that utilize punches in combat. They alternate between 2-slug combo, or a full combo consisting of 2-slug strikes followed by a lunging punch. They will also use the very same lunging punch at a distance."
-    },
-    {
-      "name": "Crushers",
-      "description": "Tall and muscular Treasure Hoarders who use hammers to fight their opponents, their swings are slow, but it deals large amount of damage if hit."
-    },
-    {
-      "name": "Handymen",
-      "description": "Tough and burly Treasure Hoarders who like Pugilists fight unarmed, but with kicks instead of punches. They alternate between a single or a 3-swing kick combo and utilize a dropkick at a distance."
-    },
-    {
-      "name": "Seamen",
-      "description": "Treasure Hoarders armed with oars and are of the same build as Gravediggers and Handymen. At close range, they swing as slowly as a Gravedigger knocking anyone down if hit, after attacking two times (or if they are at a distance), they will will swing their oars wildly at their opponents that can deal lots of damage if not dodged on time, however the resulting attack will leave them winded and leave them open to attack until they recover."
-    }
-  ],
-  "id": "treasure-hoarder",
-  "name": "Treasure Hoarder",
-  "region": "Global",
-  "type": "Common Enemies",
-  "family": "Treasure Hoarders",
-  "createdAt": {
-    "$date": "2021-04-19T11:30:10.593Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:30:10.593Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "607d69cbc3a1bb3b148f383b"
-  },
-  "elements": [],
-  "artifacts": [],
-  "drops": [
-    {
-      "name": "Whopperflower Nectar",
-      "rarity": 1,
-      "minimum_level": 1
-    },
-    {
-      "name": "Shimmering Nectar",
-      "rarity": 2,
-      "minimum_level": 40
-    },
-    {
-      "name": "Energy Nectar",
-      "rarity": 3,
-      "minimum_level": 60
-    }
-  ],
-  "elemental_descriptions": [
-    {
-      "element": "anemo",
-      "description": "A wizened, mumbling hilichurl, one that spreads the message of Anemo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. Their ability to command the flowing winds stems from dark, forgotten memories."
-    },
-    {
-      "element": "geo",
-      "description": "A wizened, mumbling hilichurl, one that listens to the strength of Geo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. To the persevering mountains, these old hilichurls are but children, but their memories and experiences have guided them towards gaining power over rock and stone."
-    },
-    {
-      "element": "dendro",
-      "description": "A wizened, mumbling hilichurl, one that awakens the might of Dendro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. A grudge stirs beneath that mask, and poison ivy sprouts as hateful whispers issue forth from it."
-    },
-    {
-      "element": "hydro",
-      "description": "A wizened, mumbling hilichurl, one that chants of the power of Hydro. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. What sort of life would lead to such simple creatures being able to summon water and rains?"
-    },
-    {
-      "element": "cryo",
-      "description": "A wizened, mumbling hilichurl, one that calls upon the bite of Cryo. Hilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. These shamans remember the frosty chants and are even more skilled in the art of using them to entrap their foes."
-    }
-  ],
-  "descriptions": [],
-  "id": "whopperflower",
-  "name": "Whopperflower",
-  "region": "Global",
-  "description": "A bizarre mimetic plant monster that harnesses the elements in combat. These plants lurk under the surface and ambush unsuspecting prey. With the passage of years, sufficient nutrition, and the right environment, it could even take root somewhere and grow into a giant tree that sways and spews elemental power...",
-  "type": "Common Enemies",
-  "family": "Mystical Beasts",
-  "createdAt": {
-    "$date": "2021-04-19T11:30:19.164Z"
-  },
-  "updatedAt": {
-    "$date": "2021-04-19T11:30:19.164Z"
-  },
-  "__v": 0
-}]
+]

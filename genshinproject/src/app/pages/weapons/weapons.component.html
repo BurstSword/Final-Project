@@ -1,0 +1,43 @@
+<html>
+<app-nav></app-nav>
+<div class="container-fluid mt-2">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Characters</li>
+        </ol>
+    </nav>
+    <h1>Weapons</h1>
+
+    <app-loading id="loadingWeapons" *ngIf="isLoaded"></app-loading>
+    <splide id="sliderWeapons" class="animated fadeIn" hidden [options]="{ 
+        fixedWidth: 100,
+        height: 150,
+        gap: 5,
+        drag:true,
+        pagination: false,
+        isNavigation: false,
+        type: 'slide'}">
+        <splide-slide *ngFor="let item of weapons">
+            <div><img class="img img-thumbnail" src="{{item.name |weaponsImg}}" (click)="changeWeapon(item)" />
+                <p style="text-align: center; font-weight: bold;">{{item.name}}</p>
+            </div>
+
+        </splide-slide>
+    </splide>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" (click)="sortWeapons('Sword')">Swords</a>
+            <a class="dropdown-item" (click)="sortWeapons('Claymore')">Claymore</a>
+            <a class="dropdown-item" (click)="sortWeapons('Polearm')">Polearms</a>
+            <a class="dropdown-item" (click)="sortWeapons('Catalyst')">Catalysts</a>
+            <a class="dropdown-item" (click)="sortWeapons('Bow')">Bows</a>
+            <a class="dropdown-item" (click)="loadWeapons()">All</a>
+        </div>
+    </div>
+</div>
+
+</html>

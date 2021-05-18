@@ -18,7 +18,7 @@ class enemiesController {
             return res.status(200).send({
                 status: 200,
                 message: "Found!",
-                artifacts: EnemyDB
+                enemies: EnemyDB
             })
         }).catch((err: any) => {
             return res.status(500).send({

@@ -17,14 +17,18 @@
 
     <splide id="sliderCharacters" class="animated fadeIn" hidden [options]="{ 
         fixedWidth: 100,
-        height: 100,
+        height: 120,
         gap: 5,
         drag:true,
         pagination: false,
         isNavigation: false,
         type: 'slide'}">
         <splide-slide *ngFor="let item of characters">
-            <img class="img img-thumbnail" src="{{item.name |characterimage}}" (click)="changeCharacter(item.name)" />
+            <div><img class="img img-thumbnail" src="{{item.name |characterimage}}"
+                    (click)="changeCharacter(item.name)" />
+                <p style="text-align: center; font-weight: bold;">{{item.name}}</p>
+            </div>
+
         </splide-slide>
     </splide>
 

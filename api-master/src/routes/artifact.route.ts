@@ -7,8 +7,7 @@ const artifactRoutes = Router();
 
 artifactRoutes.get('/findSets', artifactSetController.prototype.findAllSets);
 artifactRoutes.get('/findSet', artifactSetController.prototype.findOneSet);
-artifactRoutes.get('/findPartsFromSet', artifactPartController.prototype.findAllPartsFromSet);
-artifactRoutes.post('/findPart', artifactPartController.prototype.findOnePart);
+artifactRoutes.post('/findPartsFromSet', artifactPartController.prototype.findAllPartsFromSet);
 artifactRoutes.get('/findStats', artifactStatsController.prototype.findAllStats);
 
 export default artifactRoutes;

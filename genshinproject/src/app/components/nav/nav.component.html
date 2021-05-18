@@ -4,25 +4,29 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/home">Home</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/characters">Characters</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-          <a class="nav-link" routerLink="/artifacts">Artifacts</a>
-        </li>
-        
-      </ul>
-      <h4 class="form-inline text-light my-2 my-lg-0 mr-2 d-none d-md-block">Welcome, {{user.username}}</h4>
-      <form class="form-inline my-2 my-lg-0">
-        <button class="btn btn-outline-danger my-2 my-sm-0" (click)="logout()">Logout</button>
-      </form>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/home">Home</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/characters">Characters</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/artifacts">Artifacts</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/enemies">Enemies</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" routerLink="/weapons">Weapons</a>
+            </li>
+
+        </ul>
+        <h4 class="form-inline text-light my-2 my-lg-0 mr-2 d-none d-md-block">Welcome, {{user.username}}</h4>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-outline-danger my-2 my-sm-0" (click)="logout()">Logout</button>
+        </form>
     </div>
-  </nav>
-
-
+</nav>

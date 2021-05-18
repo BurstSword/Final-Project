@@ -1,0 +1,89 @@
+<html>
+<app-nav></app-nav>
+<div class="container-fluid mt-2">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Enemies</li>
+        </ol>
+    </nav>
+    <h1>Enemies</h1>
+    <app-loading id="loadingEnemies" *ngIf="isLoaded"></app-loading>
+
+    <splide id="sliderEnemies" class="animated fadeIn" hidden [options]="{ 
+        fixedWidth: 100,
+        height: 160,
+        gap: 5,
+        drag:true,
+        pagination: false,
+        isNavigation: false,
+        type: 'slide'}">
+        <splide-slide *ngFor="let item of enemies">
+            <div>
+                <img class="img img-thumbnail" src="{{item.name |enemyImg}}" (click)="changeEnemy(item.name)" />
+                <p style="text-align: center; font-weight: bold;">{{item.name}}</p>
+            </div>
+
+        </splide-slide>
+    </splide>
+
+    <div *ngIf="enemySelected" class="main-body">
+        <div class="row gutters-sm cardCharacter">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="{{enemySelected.name|enemyImg}}" alt="Admin" class="rounded-circle imgAvatar">
+                            <div class="mt-3">
+                                <h4>{{enemySelected.name}}</h4>
+                                <p class="text-secondary mb-1">{{enemySelected.family}}</p>
+                                <p class="text-secondary mb-1">{{enemySelected.faction}}</p>
+                                <p class="text-muted font-size-sm">{{enemySelected.region}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <!-- Elementos si tiene -->
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4>Description: </h4>
+                        <p>{{enemySelected.description}}</p>
+                        <div *ngIf="enemySelected.drops.length!=0">
+                            <h4>Drops</h4>
+                            <div class="row">
+                                <div class="col-sm" *ngFor="let item of enemySelected.drops">
+                                    <img class="artifactImg" src="{{item.name | dropsImg:enemySelected.name}} ">
+                                    <p style="overflow-wrap: break-word;">{{item.name}}</p>
+                                </div>
+                                <div class="col-sm" *ngIf="enemySelected.mora_gained">
+                                    <img class="artifactImg" src="../../../assets/images/mora.png">
+                                    <p style="overflow-wrap: break-word;">{{enemySelected.mora_gained}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div *ngIf="enemySelected.artifacts.length!=0">
+                            <h4>Artifacts dropped</h4>
+                            <div class="row">
+                                <div class="col-sm" *ngFor="let item of enemySelected.artifacts">
+                                    <img class="artifactImg" src="{{item.name |artifactSet}}">
+                                    <p style="overflow-wrap: break-word;">{{item.name}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</html>

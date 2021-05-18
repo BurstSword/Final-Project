@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { ArtifactPart, ResponseArtifact, ResponseArtifactPart } from '../interfaces';
+import { ArtifactPart, ArtifactSet, ResponseArtifact, ResponseArtifactPart, ResponseArtifactStat } from '../interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -14,14 +14,14 @@ export class ArtifactsService {
     return this._http.get<ResponseArtifact>(environment.databaseURL + "artifacts/findSets");
 
   }
+  findSetParts(artifactSet:ArtifactSet) {
+    return this._http.post<ResponseArtifactPart>(environment.databaseURL + "artifacts/findPartsFromSet", artifactSet);
 
-  findNameFlower(idSet: string) {
-    console.log(idSet);
-    return this._http.post<ResponseArtifactPart>(environment.databaseURL + "artifacts/findPart", idSet);
   }
 
-  findImg(name: string) {
-    console.log(environment.assetsURL + `characters/${name}/portrait`);
-    return this._http.get<any>(environment.assetsURL + `characters/${name}/portrait`);
+  findStats(){
+    return this._http.get<ResponseArtifactStat>(environment.databaseURL + "artifacts/findStats");
   }
+
+
 }

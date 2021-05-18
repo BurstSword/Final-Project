@@ -8,20 +8,79 @@
             <li class="breadcrumb-item active" aria-current="page">Artifacts</li>
         </ol>
     </nav>
+    <h1>Artifacts</h1>
+    <app-loading id="loadingArtifact"></app-loading>
 
-    <splide id="sliderCharacters" class="animated fadeIn" hidden [options]="{ 
+    <splide id="sliderArtifacts" class="animated fadeIn" hidden [options]="{ 
         fixedWidth: 100,
-        height: 100,
+        height: 150,
         gap: 5,
         drag:true,
         pagination: false,
         isNavigation: false,
-        direction:'ttb',
         type: 'slide'}">
         <splide-slide *ngFor="let item of artifacts">
-            <img class="img img-thumbnail" src="{{item.name}}" />
+            <div><img class="img img-thumbnail" (click)="selectSet(item)" src="{{item.name | artifactSet}}" />
+                <p *ngIf="item.name=='Thundersoother'" style="text-align: center; font-weight: bold; word-break: break-all;">{{item.name}}</p>
+                <p *ngIf="item.name!='Thundersoother'" style="text-align: center; font-weight: bold;">{{item.name}}</p>
+            </div>
+
+
         </splide-slide>
     </splide>
+
+    <div *ngIf="selectedSet" class="main-body">
+        <div class="row gutters-sm cardCharacter">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="{{selectedSet.name|artifactSet}}" alt="Admin" class="rounded-circle imgAvatar">
+                            <div class="mt-3">
+                                <h4>{{selectedSet.name}}'s Set</h4>
+                                <p>Max Rarity: {{selectedSet.max_rarity}}⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                            <span style="font-size: larger;">2 pieces bonus: {{selectedSet.two_piece_bonus}}</span>
+                        </li>
+                    </ul>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                            <span style="font-size: larger;">4 pieces bonus: {{selectedSet.four_piece_bonus}}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3>Artifact Pieces</h3>
+                        <div class="row">
+                            <div *ngFor="let item of artifact" class="col-sm">
+                                <img class="artifactImg" src="{{item.name |artifactParts: setName}}">
+
+                                <p style="overflow-wrap: break-word;">{{item.name}}</p>
+                                <h3>
+                                    Possible stats
+                                </h3>
+                                <ul>
+                                    <li style="list-style-type: none;" *ngFor="let stat of item.stats">{{stat}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 
 </html>

@@ -19,6 +19,12 @@ import { NgxSplideModule } from 'ngx-splide';
 import { LoadingComponent } from './components/loading/loading.component';
 import { ArtifactsComponent } from './pages/artifacts/artifacts.component';
 import { ArtifactSetPipe } from './pipes/artifact-set.pipe';
+import { ArtifactPartsPipe } from './pipes/artifact-parts.pipe';
+import { EnemiesComponent } from './pages/enemies/enemies.component';
+import { EnemyImgPipe } from './pipes/enemy-img.pipe';
+import { DropsImgPipe } from './pipes/drops-img.pipe';
+import { WeaponsComponent } from './pages/weapons/weapons.component';
+import { WeaponsImgPipe } from './pipes/weapons-img.pipe';
 
 
 
@@ -36,7 +42,13 @@ import { ArtifactSetPipe } from './pipes/artifact-set.pipe';
     ElementsPipe,
     LoadingComponent,
     ArtifactsComponent,
-    ArtifactSetPipe
+    ArtifactSetPipe,
+    ArtifactPartsPipe,
+    EnemiesComponent,
+    EnemyImgPipe,
+    DropsImgPipe,
+    WeaponsComponent,
+    WeaponsImgPipe
   ],
   imports: [
     BrowserModule,
