@@ -8,9 +8,12 @@ html {
     text-align: left;
     background-color: white;
     height: 100vh;
+    width: 100%;
     font-family: Genshin;
 }
-
+.btnFilter{
+background-color: #e2e8f0;
+}
 .main-body {
     padding: 5%;
 }

@@ -10,8 +10,9 @@
     <div class="d-flex justify-content-between align-items-center">
         <h1>Weapons</h1>
         <div class="dropdown dropleft">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Filter
+            <button class="btn btnFilter dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Filter
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" (click)="sortWeapons('Sword')">Swords</a>
@@ -24,8 +25,9 @@
         </div>
     </div>
 
-    <app-loading id="loadingWeapons" *ngIf="isLoaded"></app-loading>
-    <splide id="sliderWeapons" class="animated fadeIn" hidden [options]="{ 
+    <app-loading id="loadingWeapons" class="animated fadeIn" *ngIf="loading"></app-loading>
+    <div class="animated fadeIn" *ngIf="weapons">
+        <splide id="sliderWeapons" [options]="{ 
         fixedWidth: 120,
         height: 170,
         gap: 5,
@@ -33,15 +35,15 @@
         pagination: false,
         isNavigation: false,
         type: 'slide'}">
-        <splide-slide *ngFor="let item of weapons">
-            <div><img class="img img-thumbnail" src="{{item.name |weaponsImg}}" (click)="changeWeapon(item)" />
-                <p style="text-align: center; font-weight: bold;">{{item.name}}</p>
-            </div>
+            <splide-slide *ngFor="let item of weapons">
+                <div><img class="img img-thumbnail" src="{{item.name |weaponsImg}}" (click)="changeWeapon(item)" />
+                    <p style="text-align: center; font-weight: bold;">{{item.name}}</p>
+                </div>
 
-        </splide-slide>
-    </splide>
-
-    <div *ngIf="weaponSelected" class="main-body">
+            </splide-slide>
+        </splide>
+    </div>
+    <div *ngIf="weaponSelected" class="main-body animated fadeIn">
         <div class="row gutters-sm cardCharacter">
             <div class="col-md-4 mb-3">
                 <div class="card">
@@ -58,13 +60,16 @@
                 <div class="card mt-3">
 
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">Substat: {{weaponSelected.subStat}}</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">Substat:
+                            {{weaponSelected.subStat}}</li>
                     </ul>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">Base Attack: {{weaponSelected.baseAttack}}</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">Base
+                            Attack: {{weaponSelected.baseAttack}}</li>
                     </ul>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">Location: {{weaponSelected.location}}</li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                            Location: {{weaponSelected.location}}</li>
                     </ul>
                 </div>
             </div>

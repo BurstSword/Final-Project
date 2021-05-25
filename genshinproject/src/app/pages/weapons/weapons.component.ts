@@ -9,39 +9,41 @@ import { WeaponsService } from 'src/app/services/weapons.service';
 })
 export class WeaponsComponent implements OnInit {
 
-  constructor(private weaponsService: WeaponsService) { }
+  constructor(private weaponsService: WeaponsService) { this.loading = true; }
   public weapons: Weapon[]
   public weaponSelected: Weapon;
-  public isLoaded: boolean;
+  public loading: boolean;
   ngOnInit(): void {
-    this.isLoaded = true;
     this.loadWeapons()
-    setTimeout(this.loadWeaponsSlider, 1000)
+
   }
 
   loadWeapons() {
+    this.weaponSelected = null;
+    this.weapons = null;
+    this.loading = true;
     this.weaponsService.findWeapons().subscribe(resp => {
       this.weapons = resp.weapons;
-      console.log(this.weapons);
+      this.weaponSelected = this.weapons[0];
+      this.loading = false;
     })
   }
 
-  loadWeaponsSlider() {
-    const slider = document.getElementById("sliderWeapons");
-    const loader = document.getElementById("loadingWeapons");
-    loader.remove();
-    slider.removeAttribute("hidden");
-  }
+
 
   sortWeapons(type: string) {
+    this.weaponSelected = null;
+    this.weapons = null;
+    this.loading = true;
     this.weaponsService.findWeaponsByType(type).subscribe(resp => {
       this.weapons = resp.weapons;
+      this.weaponSelected = this.weapons[0];
+      this.loading = false;
     })
   }
 
-  changeWeapon(weapon:Weapon){
-    this.weaponSelected=weapon;
-    console.log(this.weaponSelected);
+  changeWeapon(weapon: Weapon) {
+    this.weaponSelected = weapon;
   }
-  
+
 }

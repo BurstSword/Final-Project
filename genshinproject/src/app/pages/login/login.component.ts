@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder, private userService: UserService, private router: Router, private tokenService: TokenService) { }
   public loginForm: FormGroup;
@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit{
         toast: true,
         position: 'top-end',
         showConfirmButton: false,
-        timer: 3000,
+        timer: 2000,
         timerProgressBar: true,
         didOpen: (toast) => {
           toast.addEventListener('mouseleave', Swal.resumeTimer)
@@ -69,15 +69,15 @@ export class LoginComponent implements OnInit{
 
       Toast.fire({
         icon: 'success',
-        title: 'Signed in successfully'
+        title: '<div style="font-family:Genshin">Signed in successfully</div>'
       })
 
       this.router.navigateByUrl("/home")
     }, error => {
-      Swal.fire(
-        error.message,
-        'error'
-      )
+      Swal.fire({
+        icon: 'error',
+        title: '<div style="font-family:Genshin">Wrong credentials</div>'
+      })
     });
   }
 }

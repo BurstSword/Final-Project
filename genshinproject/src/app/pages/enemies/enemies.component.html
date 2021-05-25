@@ -9,9 +9,10 @@
         </ol>
     </nav>
     <h1>Enemies</h1>
-    <app-loading id="loadingEnemies" *ngIf="isLoaded"></app-loading>
+    <app-loading id="loadingEnemies" class="animated fadeIn" *ngIf="loading"></app-loading>
 
-    <splide id="sliderEnemies" class="animated fadeIn" hidden [options]="{ 
+    <div class="animated fadeIn" *ngIf="enemies">
+        <splide id="sliderEnemies" [options]="{ 
         fixedWidth: 100,
         height: 160,
         gap: 5,
@@ -19,16 +20,16 @@
         pagination: false,
         isNavigation: false,
         type: 'slide'}">
-        <splide-slide *ngFor="let item of enemies">
-            <div>
-                <img class="img img-thumbnail" src="{{item.name |enemyImg}}" (click)="changeEnemy(item.name)" />
-                <p style="text-align: center; font-weight: bold;">{{item.name}}</p>
-            </div>
+            <splide-slide *ngFor="let item of enemies">
+                <div>
+                    <img class="img img-thumbnail" src="{{item.name |enemyImg}}" (click)="changeEnemy(item.name)" />
+                    <p style="text-align: center; font-weight: bold;">{{item.name}}</p>
+                </div>
 
-        </splide-slide>
-    </splide>
-
-    <div *ngIf="enemySelected" class="main-body">
+            </splide-slide>
+        </splide>
+    </div>
+    <div *ngIf="enemySelected" class="main-body animated fadeIn">
         <div class="row gutters-sm cardCharacter">
             <div class="col-md-4 mb-3">
                 <div class="card">

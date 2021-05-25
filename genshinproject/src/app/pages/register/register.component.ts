@@ -62,17 +62,17 @@ export class RegisterComponent implements OnInit {
 
 
     this.userService.register(data).subscribe(resp => {
-      Swal.fire(
-        resp.message,
-        'success'
-      ).then(() => {
+      Swal.fire({
+        icon: 'success',
+        title: '<div style="font-family:Genshin">Succesfully registered</div>'
+      }).then(() => {
         this.router.navigateByUrl("/login");
       })
     }, error => {
-      Swal.fire(
-        error.message,
-        'error'
-      )
+      Swal.fire({
+        icon: 'error',
+        title: '<div style="font-family:Genshin">An error has ocurred</div>'
+      })
     })
   }
 }

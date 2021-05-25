@@ -13,21 +13,24 @@ export class ArtifactsComponent implements OnInit {
   public selectedSet: ArtifactSet;
   public artifactStats: ArtifactStat[];
   public imageName: string;
-  public isLoaded: boolean;
+  public loading: boolean;
   public setName: string;
-  constructor(private artifactsService: ArtifactsService) { }
+  constructor(private artifactsService: ArtifactsService) {
+    this.loading = true;
+  }
 
   ngOnInit(): void {
-
     this.loadArtifacts();
     this.loadStats();
-    setTimeout(this.loadArtifactsSlider, 1000)
   }
 
 
   loadArtifacts() {
     this.artifactsService.findSets().subscribe(resp => {
       this.artifacts = resp.artifacts;
+      this.selectedSet=this.artifacts[0];
+      this.selectSet(this.selectedSet);
+      this.loading = false;
     })
   }
 
@@ -37,12 +40,7 @@ export class ArtifactsComponent implements OnInit {
     })
   }
 
-  loadArtifactsSlider() {
-    const slider = document.getElementById("sliderArtifacts");
-    const loader = document.getElementById("loadingArtifact");
-    loader.remove();
-    slider.removeAttribute("hidden");
-  }
+
 
   selectSet(artifact: ArtifactSet) {
     this.artifact = [];

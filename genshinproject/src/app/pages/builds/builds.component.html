@@ -1,8 +1,5 @@
 <html>
 <app-nav></app-nav>
-
-
-
 <div class="container-fluid mt-2">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
@@ -10,13 +7,14 @@
             <li class="breadcrumb-item active" aria-current="page">Builds</li>
         </ol>
     </nav>
-    <div class="d-flex justify-content-between align-items-center">
-        <h1>Builds</h1>
-        
-    </div>
 
-    <app-loading id="loadingBuilds"></app-loading>
-    <splide id="sliderBuilds" class="animated fadeIn" hidden [options]="{ 
+    <h1>Builds</h1>
+
+
+
+    <app-loading id="loadingBuilds" class="animated fadeIn" *ngIf="loading"></app-loading>
+    <div class="animated fadeIn" *ngIf="builds">
+        <splide id="sliderBuilds" [options]="{ 
         fixedWidth: 120,
         height: 150,
         gap: 5,
@@ -24,38 +22,41 @@
         pagination: false,
         isNavigation: false,
         type: 'slide'}">
-        <splide-slide *ngFor="let item of builds;let index=index">
-            <div>
-                <img class="img img-thumbnail" (click)="selectBuilds(item)"
-                    src="{{item.characterId.name | characterimage}}" />
-                <p style="text-align: center; font-weight: bold; word-break: break-all;">{{item.name}}</p>
+            <splide-slide *ngFor="let item of builds;let index=index">
+                <div>
+                    <img class="img img-thumbnail" (click)="selectBuilds(item)"
+                        src="{{item.characterId.name | characterimage}}" />
+                    <p style="text-align: center; font-weight: bold; word-break: break-all;">{{item.name}}</p>
 
-            </div>
+                </div>
 
 
-        </splide-slide>
-    </splide>
-
-    <div *ngIf="selectedBuild" class="main-body">
+            </splide-slide>
+        </splide>
+    </div>
+    <div *ngIf="selectedBuild" class="main-body animated fadeIn">
         <div class="d-flex justify-content-between align-items-center">
             <h1 *ngIf="isEditing==false">{{selectedBuild.name}}</h1>
             <div *ngIf="isEditing==true">
                 <label for="buildName">Build name</label>
-                <input type="text" class="form-control mb-2" style="width: 100%;"
-                    value="{{selectedBuild.name}}" id="buildName"
-                    placeholder="{{selectedBuild.name}}">
+                <input type="text" class="form-control mb-2" style="width: 100%;" value="{{selectedBuild.name}}"
+                    id="buildName" placeholder="{{selectedBuild.name}}">
             </div>
             <div *ngIf="selectedBuild" class="dropdown dropleft">
-                <button *ngIf="isEditing==false" class="btn btn-info mr-1" type="button" aria-expanded="false" (click)="edit()">
+                <button *ngIf="isEditing==false" class="btn btn-info mr-1" type="button" aria-expanded="false"
+                    (click)="edit()">
                     Edit
                 </button>
-                <button *ngIf="isEditing==true" class="btn btn-info mr-1" type="button" aria-expanded="false" (click)="edit()">
+                <button *ngIf="isEditing==true" class="btn btn-info mr-1" type="button" aria-expanded="false"
+                    (click)="edit()">
                     Stop
                 </button>
-                <button *ngIf="isEditing==true" class="btn btn-success mr-1" type="button" aria-expanded="false" (click)="saveChanges()">
+                <button *ngIf="isEditing==true" class="btn btn-success mr-1" type="button" aria-expanded="false"
+                    (click)="saveChanges()">
                     Save
                 </button>
-                <button *ngIf="isEditing==true" class="btn btn-danger mr-1" type="button" aria-expanded="false" (click)="removeBuild()">
+                <button *ngIf="isEditing==true" class="btn btn-danger mr-1" type="button" aria-expanded="false"
+                    (click)="removeBuild()">
                     Delete
                 </button>
             </div>
@@ -139,7 +140,7 @@
                                         Stats
                                     </a>
 
-                                    <div  class="dropdown-menu" style="max-height: 100px;
+                                    <div class="dropdown-menu" style="max-height: 100px;
                                     overflow-y: auto;" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" *ngFor="let item of flowers[0].stats"
                                             (click)="selectFlowerStat(item)">{{item}}</a>
@@ -178,7 +179,7 @@
                                         Stats
                                     </a>
 
-                                    <div  class="dropdown-menu" style="max-height: 100px;
+                                    <div class="dropdown-menu" style="max-height: 100px;
                                     overflow-y: auto;" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" *ngFor="let item of feathers[0].stats"
                                             (click)="selectFeatherStat(item)">{{item}}</a>
@@ -217,7 +218,7 @@
                                         Stats
                                     </a>
 
-                                    <div  class="dropdown-menu" style="max-height: 100px;
+                                    <div class="dropdown-menu" style="max-height: 100px;
                                     overflow-y: auto;" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" *ngFor="let item of watches[0].stats"
                                             (click)="selectWatchStat(item)">{{item}}</a>
@@ -256,7 +257,7 @@
                                         Stats
                                     </a>
 
-                                    <div  class="dropdown-menu" style="max-height: 100px;
+                                    <div class="dropdown-menu" style="max-height: 100px;
                                     overflow-y: auto;" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" *ngFor="let item of goblets[0].stats"
                                             (click)="selectGobletStat(item)">{{item}}</a>
@@ -295,7 +296,7 @@
                                         Stats
                                     </a>
 
-                                    <div  class="dropdown-menu" style="max-height: 100px;
+                                    <div class="dropdown-menu" style="max-height: 100px;
                                     overflow-y: auto;" aria-labelledby="dropdownMenuLink">
                                         <a class="dropdown-item" *ngFor="let item of bandanas[0].stats"
                                             (click)="selectBandanaStat(item)">{{item}}</a>

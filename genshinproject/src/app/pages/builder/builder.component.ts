@@ -1,10 +1,12 @@
 import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ArtifactPart, ArtifactPartBuild, Artifacts, ArtifactStat, Build, Character, User, Weapon } from 'src/app/interfaces';
 import { ArtifactsService } from 'src/app/services/artifacts.service';
 import { BuildServiceService } from 'src/app/services/build-service.service';
 import { CharacterService } from 'src/app/services/character.service';
 import { WeaponsService } from 'src/app/services/weapons.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-builder',
@@ -13,7 +15,7 @@ import { WeaponsService } from 'src/app/services/weapons.service';
 })
 export class BuilderComponent implements OnInit {
 
-  constructor(private characterService: CharacterService, private weaponService: WeaponsService, private artifactService: ArtifactsService, private buildService: BuildServiceService) { }
+  constructor(private characterService: CharacterService, private router: Router, private weaponService: WeaponsService, private artifactService: ArtifactsService, private buildService: BuildServiceService) { }
   public characters: Character[];
   public characterSelected: Character;
 
@@ -204,14 +206,20 @@ export class BuilderComponent implements OnInit {
       watchStat: this.watchesSelected.stat,
       weaponId: this.weaponSelected._id
     }
-    
+
 
     this.buildService.insertBuild(this.buildToSend).subscribe(resp => {
-      
-    })
-
-    this.buildService.findBuildsById(user._id).subscribe(resp=>{
-      console.log(resp);
+      Swal.fire({
+        icon: 'success',
+        title: '<div style="font-family:Genshin">Build saved!</div>'
+      }).then(() => {
+        this.router.navigateByUrl("/builds");
+      })
+    }, error => {
+      Swal.fire({
+        icon: 'error',
+        title: '<div style="font-family:Genshin">An error has ocurred</div>'
+      })
     })
   }
 }

@@ -1,6 +1,7 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Character } from 'src/app/interfaces';
 import { CharacterService } from 'src/app/services/character.service';
+import Swal from 'sweetalert2';
 
 
 
@@ -12,34 +13,57 @@ import { CharacterService } from 'src/app/services/character.service';
 })
 export class CharactersComponent implements OnInit {
 
-  constructor(private CharacterService: CharacterService) { }
+  constructor(private CharacterService: CharacterService) {
+    this.loading = true;
+  }
   public characters: Character[];
   public characterSelected: Character;
-  public isLoaded: boolean;
+  public loading: boolean;
+  public elements: string[] = [
+    "anemo",
+    "cryo",
+    "dendro",
+    "electro",
+    "geo",
+    "hydro",
+    "pyro"
+  ]
+
 
   ngOnInit(): void {
-    this.isLoaded = true;
     this.findCharacters();
-    setTimeout(this.loadCharactersSlider, 1000)
   }
 
   findCharacters() {
     this.CharacterService.findCharacters().subscribe(resp => {
       this.characters = resp.characters;
-      this.characterSelected=resp.characters[0];
+      this.characterSelected = resp.characters[0];
+      this.loading = false;
     }, err => {
     })
   }
 
-  loadCharactersSlider() {
-    const slider = document.getElementById("sliderCharacters");
-    const loader = document.getElementById("loadingCharacters");
-    loader.remove();
-    slider.removeAttribute("hidden");
+  filterByElement(element: string) {
+    if (element == "dendro") {
+      Swal.fire({
+        icon: 'error',
+        title: '<div style="font-family:Genshin">No dendro characters yet</div>'
+      })
+    } else {
+      this.characters = null;
+      this.loading = true;
+      this.characterSelected = null;
+      this.CharacterService.findCharactersByElement(element).subscribe(resp => {
+        this.characters = resp.characters;
+        this.characterSelected = resp.characters[0];
+        this.loading = false;
+      })
+    }
+
   }
 
   changeCharacter(name: string) {
-    console.log("Pruebita");
+    this.characterSelected = null;
     const res = this.characters.find(ch => ch.name === name);
     this.characterSelected = res;
   }

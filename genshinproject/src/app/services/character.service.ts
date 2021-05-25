@@ -15,6 +15,9 @@ export class CharacterService {
     return this._http.get<ResponseCharacter>(environment.databaseURL + "characters/findCharacters");
 
   }
+  findCharactersByElement(element:string) {
+    return this._http.post<ResponseCharacter>(environment.databaseURL + "characters/findCharactersByElement",{element:element});
+  }
 
   findImg(name:string){
     return this._http.get<any>(environment.assetsURL + `characters/${name}/portrait`);

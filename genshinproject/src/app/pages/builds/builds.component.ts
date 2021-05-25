@@ -13,13 +13,13 @@ import { WeaponsService } from 'src/app/services/weapons.service';
 })
 export class BuildsComponent implements OnInit {
 
-  constructor(private buildService: BuildServiceService, private characterService: CharacterService, private weaponService: WeaponsService, private artifactService: ArtifactsService) { }
+  constructor(private buildService: BuildServiceService, private characterService: CharacterService, private weaponService: WeaponsService, private artifactService: ArtifactsService) { this.loading = true; }
   public user: User;
   public characters: Character[];
   public buildToSend: Build;
   public builds: BuildShow[]
   public buildsCopy: BuildShow[];
-  public isLoaded: boolean;
+  public loading: boolean;
   public selectedBuild: BuildShow;
   public weapons: Weapon[];
   public isEditing: boolean = false;
@@ -34,13 +34,16 @@ export class BuildsComponent implements OnInit {
     this.loadArtifacts();
     this.loadBuildsById();
     this.loadCharacters();
-    setTimeout(this.loadBuildSlider, 1000)
+
   }
 
   loadBuildsById() {
+    this.builds = null;
+    this.loading = true;
     this.buildService.findBuildsById(this.user._id).subscribe(resp => {
       this.builds = resp.builds;
-
+      this.selectBuilds(this.builds[this.builds.length-1])
+      this.loading = false;
     })
   }
 
@@ -208,12 +211,7 @@ export class BuildsComponent implements OnInit {
     this.buildToSend.bandanaStat = stat;
   }
 
-  loadBuildSlider() {
-    const slider = document.getElementById("sliderBuilds");
-    const loader = document.getElementById("loadingBuilds");
-    loader.remove();
-    slider.removeAttribute("hidden");
-  }
+
 
   capitalizeFirstLetter(string: string) {
     string = string.toLowerCase();
@@ -224,18 +222,14 @@ export class BuildsComponent implements OnInit {
     this.edit();
     this.buildToSend.name = (<HTMLInputElement>document.getElementById("buildName")).value;
     this.buildService.updateBuild(this.buildToSend).subscribe(resp => {
-      const index = this.builds.findIndex(b => b._id == resp.builds._id)
-      console.log(index);
-      if (index > -1) {
-        this.builds.splice(index, 1, resp.builds);
-        this.selectedBuild = JSON.parse(JSON.stringify(resp.builds));
-      }
+      this.loadBuildsById();
     })
   }
 
   removeBuild() {
     this.edit();
     this.buildService.removeBuild(this.buildToSend._id).subscribe(resp => {
+      this.selectedBuild=null;
       this.loadBuildsById();
     })
   }

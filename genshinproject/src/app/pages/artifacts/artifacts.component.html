@@ -9,9 +9,10 @@
         </ol>
     </nav>
     <h1>Artifacts</h1>
-    <app-loading id="loadingArtifact"></app-loading>
+    <app-loading id="loadingArtifact" class="animated fadeIn" *ngIf="loading"></app-loading>
 
-    <splide id="sliderArtifacts" class="animated fadeIn" hidden [options]="{ 
+    <div class="animated fadeIn" *ngIf="artifacts">
+        <splide id="sliderArtifacts" [options]="{ 
         fixedWidth: 100,
         height: 160,
         gap: 5,
@@ -19,17 +20,19 @@
         pagination: false,
         isNavigation: false,
         type: 'slide'}">
-        <splide-slide *ngFor="let item of artifacts">
-            <div><img class="img img-thumbnail" (click)="selectSet(item)" src="{{item.name | artifactSet}}" />
-                <p *ngIf="item.name=='Thundersoother'" style="text-align: center; font-weight: bold; word-break: break-all;">{{item.name}}</p>
-                <p *ngIf="item.name!='Thundersoother'" style="text-align: center; font-weight: bold;">{{item.name}}</p>
-            </div>
+            <splide-slide *ngFor="let item of artifacts">
+                <div><img class="img img-thumbnail" (click)="selectSet(item)" src="{{item.name | artifactSet}}" />
+                    <p *ngIf="item.name=='Thundersoother'"
+                        style="text-align: center; font-weight: bold; word-break: break-all;">{{item.name}}</p>
+                    <p *ngIf="item.name!='Thundersoother'" style="text-align: center; font-weight: bold;">{{item.name}}
+                    </p>
+                </div>
 
 
-        </splide-slide>
-    </splide>
-
-    <div *ngIf="selectedSet" class="main-body">
+            </splide-slide>
+        </splide>
+    </div>
+    <div *ngIf="selectedSet" class="main-body animated fadeIn">
         <div class="row gutters-sm cardCharacter">
             <div class="col-md-4 mb-3">
                 <div class="card">

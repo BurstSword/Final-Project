@@ -5,19 +5,32 @@
   <p class="lead">Your favourite webpage for Genshin Impact information and character builder!</p>
   <hr class="my-4">
   <p>This is all you can find: </p>
-  <div id="carouselExampleControls" class="carousel slide" style="height: 50%;" data-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide container list" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
     <div class="carousel-inner">
-      
       <div class="carousel-item {{ (i == 0) ? 'active' : ''}}" *ngFor="let item of utils; let i = index">
-        <h1>{{item.text}}</h1>
-        <img src="{{item.img}}" class="d-block w-100 img img-thumbnail " alt="...">
+        <img class="d-block w-100"
+          src="{{item.img}}"
+          alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>{{item.text}}</h1>
+          <p>...</p>
+        </div>
       </div>
+
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
