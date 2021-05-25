@@ -3,7 +3,11 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     height: auto;
-    font-family: 'Numans', sans-serif;
+    font-family: Genshin;
     overflow: hidden;
 }
 
+@font-face {
+    font-family: Genshin;
+    src: url("../../../assets/fonts/zh-cn.ttf");
+}

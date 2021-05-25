@@ -17,6 +17,30 @@ export interface ResponseArtifact {
     artifacts: ArtifactSet[],
     error?: string
 }
+export interface ResponseBuild {
+    status: number,
+    message: string,
+    builds: BuildShow[],
+    error?: string
+}
+
+export interface BuildShow {
+    _id?:string,
+    name: string,
+    idUser: User,
+    characterId: Character,
+    flowerId: ArtifactPart,
+    featherId: ArtifactPart,
+    watchId: ArtifactPart,
+    gobletId: ArtifactPart,
+    bandanaId: ArtifactPart,
+    weaponId: Weapon,
+    flowerStat: string,
+    bandanaStat: string,
+    gobletStat: string,
+    featherStat: string,
+    watchStat: string,
+}
 export interface ResponseArtifactPart {
     status: number,
     message: string,
@@ -83,6 +107,7 @@ export interface User {
 }
 
 export interface Character {
+    _id: string
     name: string,
     vision: string,
     weapon: string,
@@ -100,6 +125,7 @@ export interface Character {
 }
 
 export interface Weapon {
+    _id: string
     name: string
     type: string
     rarity: number
@@ -134,13 +160,58 @@ export interface ArtifactPart {
     type: string,
     stats?: string[]
 }
+
 export interface ArtifactStat {
     _id: string,
     type: string,
     stats: string[]
 }
 
+export interface ArtifactPartBuild {
+    _id: string,
+    name: string,
+    idSet: idSet,
+    type: string,
+    stats?: string[]
+    stat?: string
+}
 
+export interface ResponseUpdate{
+    status: number,
+    message: string,
+    builds: BuildShow,
+    error?: string
+}
+
+export interface Build {
+    _id?:string,
+    name: string,
+    idUser: string,
+    characterId: string,
+    flowerId: string,
+    featherId: string,
+    watchId: string,
+    gobletId: string,
+    bandanaId: string,
+    weaponId: string,
+    flowerStat: string,
+    bandanaStat: string,
+    gobletStat: string,
+    featherStat: string,
+    watchStat: string,
+}
+
+export interface idSet {
+    _id: string,
+    name: string
+}
+
+export interface ResponseArtifactBuild {
+    status: number,
+    message: string,
+    artifacts: ArtifactPartBuild[],
+    error?: string
+}
 
 export interface SkillTalents {
     name: string,

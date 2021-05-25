@@ -1,0 +1,312 @@
+<html>
+<app-nav></app-nav>
+<div class="container-fluid mt-2">
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Builder</li>
+        </ol>
+    </nav>
+    <h1>Builder</h1>
+
+    <div class="main-body">
+        <div class="d-flex justify-content-between align-items-center">
+            <div *ngIf="characterSelected"><label for="buildName">Build name</label>
+                <input type="text" class="form-control mb-2" style="width: 100%;"
+                    value="{{characterSelected.name}} build" id="buildName"
+                    placeholder="{{characterSelected.name}} build">
+            </div>
+            <button class="btn btn-info" (click)="sendBuild()">Send</button>
+        </div>
+
+        <div class="row gutters-sm cardCharacter">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img *ngIf="characterSelected" src="{{characterSelected.name|characterimage}}"
+                                class="rounded-circle imgAvatar mb-2">
+                            <div *ngIf="characterSelected" class="mt-3">
+                                <h4>{{characterSelected.name}}</h4>
+                            </div>
+                            <div class="dropdown show">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Characters
+                                </a>
+
+                                <div class="dropdown-menu" style="height: 100px;
+                                overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" *ngFor="let item of characters"
+                                        (click)="changeCharacter(item)">{{item.name}}</a>
+
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <!-- <h4>{{selectedSet.name}}'s Set</h4>
+                                <p>Max Rarity: {{selectedSet.max_rarity}}⭐</p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img *ngIf="weaponSelected" src="{{weaponSelected.name|weaponsImg}}"
+                                class="rounded-circle imgAvatar mb-2">
+                            <div *ngIf="weaponSelected" class="mt-3">
+                                <h4>{{weaponSelected.name}}</h4>
+                            </div>
+                            <div *ngIf="characterSelected" class="dropdown show">
+                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Weapons
+                                </a>
+
+                                <div class="dropdown-menu" style="height: 100px;
+                                overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" *ngFor="let item of weapons"
+                                        (click)="changeWeapon(item)">{{item.name}}</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h3>Artifact Pieces</h3>
+                        <div class="row">
+
+                            <div class="col-sm">
+                                <img class="artifactImg" *ngIf="flowerSelected"
+                                    src="{{flowerSelected.name| artifactParts: flowerSelected.idSet.name}}">
+                                <p *ngIf="flowerSelected">{{flowerSelected.name}}</p>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Flowers
+                                    </a>
+
+                                    <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of flowers"
+                                            (click)="changeFlower(item)">{{item.name}}</a>
+
+                                    </div>
+                                </div>
+                                <div class="dropdown show mt-2">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Stats
+                                    </a>
+
+                                    <div *ngIf="flowerSelected" class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of flowerSelected.stats"
+                                            (click)="selectFlowerStat(item)">{{item}}</a>
+
+                                    </div>
+                                    <h3>Selected stat</h3>
+                                    <p *ngIf="flowerSelected">{{flowerSelected.stat}}</p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col-sm">
+                                <img class="artifactImg" *ngIf="gobletsSelected"
+                                    src="{{gobletsSelected.name| artifactParts: gobletsSelected.idSet.name}}">
+                                <p *ngIf="gobletsSelected">{{gobletsSelected.name}}</p>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Goblets
+                                    </a>
+
+                                    <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of goblets"
+                                            (click)="changeGoblet(item)">{{item.name}}</a>
+
+                                    </div>
+                                </div>
+                                <div class="dropdown show mt-2">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Stats
+                                    </a>
+
+                                    <div *ngIf="gobletsSelected" class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of gobletsSelected.stats"
+                                            (click)="selectGobletStat(item)">{{item}}</a>
+
+                                    </div>
+                                    <h3>Selected stat</h3>
+                                    <p *ngIf="gobletsSelected">{{gobletsSelected.stat}}</p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col-sm">
+                                <img class="artifactImg" *ngIf="watchesSelected"
+                                    src="{{watchesSelected.name| artifactParts: watchesSelected.idSet.name}}">
+                                <p *ngIf="watchesSelected">{{watchesSelected.name}}</p>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Watches
+                                    </a>
+
+                                    <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of watches"
+                                            (click)="changeWatch(item)">{{item.name}}</a>
+
+                                    </div>
+                                </div>
+                                <div class="dropdown show mt-2">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Stats
+                                    </a>
+
+                                    <div *ngIf="watchesSelected" class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of watchesSelected.stats"
+                                            (click)="selectWatchStat(item)">{{item}}</a>
+
+                                    </div>
+                                    <h3>Selected stat</h3>
+                                    <p *ngIf="watchesSelected">{{watchesSelected.stat}}</p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col-sm">
+                                <img class="artifactImg" *ngIf="feathersSelected"
+                                    src="{{feathersSelected.name| artifactParts: feathersSelected.idSet.name}}">
+                                <p *ngIf="feathersSelected">{{watchesSelected.name}}</p>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Feathers
+                                    </a>
+
+                                    <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of feathers"
+                                            (click)="changeFeather(item)">{{item.name}}</a>
+
+                                    </div>
+                                </div>
+                                <div class="dropdown show mt-2">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Stats
+                                    </a>
+
+                                    <div *ngIf="feathersSelected" class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of feathersSelected.stats"
+                                            (click)="selectFeatherStat(item)">{{item}}</a>
+
+                                    </div>
+                                    <h3>Selected stat</h3>
+                                    <p *ngIf="feathersSelected">{{feathersSelected.stat}}</p>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <div class="col-sm">
+                                <img class="artifactImg" *ngIf="bandanasSelected"
+                                    src="{{bandanasSelected.name| artifactParts: bandanasSelected.idSet.name}}">
+                                <p *ngIf="bandanasSelected">{{watchesSelected.name}}</p>
+                                <div class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Head Pieces
+                                    </a>
+
+                                    <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of bandanas"
+                                            (click)="changeBandana(item)">{{item.name}}</a>
+
+                                    </div>
+                                </div>
+                                <div class="dropdown show mt-2">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Stats
+                                    </a>
+
+                                    <div *ngIf="bandanasSelected" class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                        <a class="dropdown-item" *ngFor="let item of bandanasSelected.stats"
+                                            (click)="selectBandanaStat(item)">{{item}}</a>
+
+                                    </div>
+                                    <h3>Selected stat</h3>
+                                    <p *ngIf="bandanasSelected">{{bandanasSelected.stat}}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>

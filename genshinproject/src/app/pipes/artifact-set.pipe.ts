@@ -8,7 +8,7 @@ import { ArtifactsService } from '../services/artifacts.service';
 export class ArtifactSetPipe implements PipeTransform {
   constructor(){}
   transform(nameSet: string): any {
-    var namePart="";
+    
     return environment.assetsURL + `artifacts/${nameSet.toLowerCase().replace(/[^A-Z0-9]+/ig, "")}/icon`
   }
 

@@ -27,14 +27,12 @@ export class ArtifactsComponent implements OnInit {
 
   loadArtifacts() {
     this.artifactsService.findSets().subscribe(resp => {
-      console.log(resp);
       this.artifacts = resp.artifacts;
     })
   }
 
   loadStats() {
     this.artifactsService.findStats().subscribe(resp => {
-      console.log(resp);
       this.artifactStats = resp.artifacts;
     })
   }

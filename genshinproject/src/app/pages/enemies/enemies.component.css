@@ -3,7 +3,12 @@ html {
     text-align: left;
     background-color: white;
     height: 100vh;
-    font-family: 'Numans', sans-serif;
+    font-family: Genshin;
+}
+
+@font-face {
+    font-family: Genshin;
+    src: url("../../../assets/fonts/zh-cn.ttf");
 }
 
 .container {

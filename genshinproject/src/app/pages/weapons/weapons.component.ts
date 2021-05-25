@@ -38,4 +38,10 @@ export class WeaponsComponent implements OnInit {
       this.weapons = resp.weapons;
     })
   }
+
+  changeWeapon(weapon:Weapon){
+    this.weaponSelected=weapon;
+    console.log(this.weaponSelected);
+  }
+  
 }

@@ -20,6 +20,7 @@ import enemyRoutes from './routes/enemy.route';
 import nationRoutes from './routes/nation.route';
 import weaponRoutes from './routes/weapon.route';
 import authRoutes from './routes/auth.routes';
+import buildRoutes from './routes/build.route';
 const server = new Server();
 
 const sentryDsn = process.env.SENTRY_DSN;
@@ -60,6 +61,7 @@ if (sentryDsn && sentryDsn.length > 0) {
   server.app.use('/nations', nationRoutes);
   server.app.use('/weapons', weaponRoutes);
   server.app.use('/auth', authRoutes);
+  server.app.use('/build', buildRoutes);
 
   server.start(() => {
     console.log("Server started on port " + server.port);

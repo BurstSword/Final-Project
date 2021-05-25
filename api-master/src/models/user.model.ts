@@ -4,12 +4,14 @@ import mongoose from 'mongoose'
 export  interface User extends Document {
     username: string,
     email: string,
-    password: string,
+    password: string
+    
 }
 const userSchema = new Schema({
     username: { type: String, unique: true },
     email: { type: String, unique: true },
-    password: { type: String },
+    password: { type: String }
+    
 },
     {
         timestamps: true

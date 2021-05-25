@@ -1,69 +1,70 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
-
-html,body{
-background-image: url('../../../assets/images/backlogin.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-height: 100vh;
-font-family: 'Numans', sans-serif;
+html,
+body {
+    background-image: url('../../../assets/images/backlogin.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Genshin;
 }
 
-.container{
-height: 100%;
-align-content: center;
+@font-face {
+    font-family: Genshin;
+    src: url("../../../assets/fonts/zh-cn.ttf");
 }
 
-.card{
-height: auto;
-margin-top: auto;
-margin-bottom: auto;
-width: auto;
-background-color: rgba(44, 44, 44, 0.7) !important;
+.container {
+    height: 100%;
+    align-content: center;
 }
 
-.card-header h4{
-color: white;
+.card {
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    background-color: rgba(44, 44, 44, 0.7) !important;
 }
 
-
-
-.input-group-prepend span{
-width: 50px;
-background-color:#e53f3c;
-color: black;
-border:0 !important;
+.card-header h4 {
+    color: white;
 }
 
-input:focus{
-outline: 0 0 0 0  !important;
-box-shadow: 0 0 0 0 !important;
-
+.input-group-prepend span {
+    width: 50px;
+    background-color: #e53f3c;
+    color: black;
+    border: 0 !important;
 }
 
-
-.login_btn{
-color: white;
-background-color: #e53f3c;
-width: 80%;
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
 }
 
-.login_btn:hover{
-color: black;
-background-color: white;
+.login_btn {
+    color: white;
+    background-color: #e53f3c;
+    width: 80%;
 }
 
-.links{
-color: white;
+.login_btn:hover {
+    color: black;
+    background-color: white;
 }
 
-.links a{
-margin-left: 4px;
+.links {
+    color: white;
 }
 
-.errorMessage{
+.links a {
+    margin-left: 4px;
+}
+
+.errorMessage {
     color: red;
 }
 
-.card-footer{
+.card-footer {
     position: relative;
 }

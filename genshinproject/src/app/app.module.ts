@@ -25,6 +25,9 @@ import { EnemyImgPipe } from './pipes/enemy-img.pipe';
 import { DropsImgPipe } from './pipes/drops-img.pipe';
 import { WeaponsComponent } from './pages/weapons/weapons.component';
 import { WeaponsImgPipe } from './pipes/weapons-img.pipe';
+import { BuilderComponent } from './pages/builder/builder.component';
+import { BuildArtifactsPipe } from './pipes/build-artifacts.pipe';
+import { BuildsComponent } from './pages/builds/builds.component';
 
 
 
@@ -48,14 +51,17 @@ import { WeaponsImgPipe } from './pipes/weapons-img.pipe';
     EnemyImgPipe,
     DropsImgPipe,
     WeaponsComponent,
-    WeaponsImgPipe
+    WeaponsImgPipe,
+    BuilderComponent,
+    BuildArtifactsPipe,
+    BuildsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    NgxSplideModule
+    NgxSplideModule,
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]

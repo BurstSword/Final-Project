@@ -3,28 +3,36 @@ import mongoose from 'mongoose'
 
 interface Build extends Document {
     name: string,
-    idUser: string
-    flower: ArtifactBuild,
-    feather: ArtifactBuild,
-    watch: ArtifactBuild,
-    goblet: ArtifactBuild,
-    bandana: ArtifactBuild,
-    weapon: string
+    idUser: string,
+    characterId: string,
+    flowerId: string,
+    featherId: string,
+    watchId: string,
+    gobletId: string,
+    bandanaId: string,
+    weaponId: string,
+    flowerStat: string,
+    bandanaStat: string,
+    gobletStat: string,
+    featherStat: string,
+    watchStat: string,
+}
 
-}
-interface ArtifactBuild {
-    idArtifact: string,
-    stat: string
-}
 const buildSchema = new Schema({
     name: { type: String },
-    idUser: { type: Object },
-    flower: { type: Object },
-    feather: { type: Object },
-    watch: { type: Object },
-    goblet: { type: Object },
-    bandana: { type: Object },
-    weapon: { type: String }
+    idUser: { type: Schema.Types.ObjectId, ref: 'User' },
+    characterId: { type: Schema.Types.ObjectId, ref: 'Character' },
+    flowerId: { type: Schema.Types.ObjectId, ref: 'ArtifactPart' },
+    featherId: { type: Schema.Types.ObjectId, ref: 'ArtifactPart' },
+    watchId: { type: Schema.Types.ObjectId, ref: 'ArtifactPart' },
+    gobletId: { type: Schema.Types.ObjectId, ref: 'ArtifactPart' },
+    bandanaId: { type: Schema.Types.ObjectId, ref: 'ArtifactPart' },
+    weaponId: { type: Schema.Types.ObjectId, ref: 'Weapon' },
+    flowerStat: { type: String },
+    bandanaStat: { type: String },
+    gobletStat: { type: String },
+    featherStat: { type: String },
+    watchStat: { type: String },
 },
     {
         timestamps: true
