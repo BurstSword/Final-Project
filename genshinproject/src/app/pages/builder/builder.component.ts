@@ -1,7 +1,6 @@
-import { ThisReceiver } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ArtifactPart, ArtifactPartBuild, Artifacts, ArtifactStat, Build, Character, User, Weapon } from 'src/app/interfaces';
+import { ArtifactPartBuild, ArtifactStat, Build, Character, User, Weapon } from 'src/app/interfaces';
 import { ArtifactsService } from 'src/app/services/artifacts.service';
 import { BuildServiceService } from 'src/app/services/build-service.service';
 import { CharacterService } from 'src/app/services/character.service';
@@ -16,14 +15,13 @@ import Swal from 'sweetalert2';
 export class BuilderComponent implements OnInit {
 
   constructor(private characterService: CharacterService, private router: Router, private weaponService: WeaponsService, private artifactService: ArtifactsService, private buildService: BuildServiceService) { }
+ /* Variables */
   public characters: Character[];
   public characterSelected: Character;
-
   public buildToSend: Build;
-
   public weaponSelected: Weapon;
   public weapons: Weapon[];
-
+  public windowScrolled: boolean;
   public flowers: ArtifactPartBuild[];
   public goblets: ArtifactPartBuild[];
   public watches: ArtifactPartBuild[];
@@ -36,7 +34,6 @@ export class BuilderComponent implements OnInit {
   public bandanasSelected: ArtifactPartBuild;
   public feathersSelected: ArtifactPartBuild;
 
-  public flowerStatSelecte: string;
 
 
   public stats: ArtifactStat[];
@@ -47,37 +44,39 @@ export class BuilderComponent implements OnInit {
     this.loadStats();
     this.loadWeapons("Sword");
   }
-
+/* Method to load characters */
   loadCharacters() {
     this.characterService.findCharacters().subscribe(resp => {
       this.characters = resp.characters;
       this.characterSelected = resp.characters[0];
     })
   }
-
+/* Method to load weapons */
   loadWeapons(type: string) {
     this.weaponService.findWeaponsByType(type).subscribe(resp => {
       this.weapons = resp.weapons;
       this.weaponSelected = resp.weapons[0];
     })
   }
-
+/* Method to change the selected character */
   changeCharacter(character: Character) {
     this.characterSelected = character;
 
     this.weaponService.findWeaponsByType(character.weapon).subscribe(resp => {
-      console.log(resp);
       this.weapons = resp.weapons;
+      this.weaponSelected = this.weapons[0];
     })
 
-    this.weaponSelected = null;
+    
 
   }
 
+/* Method to change the selected weapon */
   changeWeapon(weapon: Weapon) {
     this.weaponSelected = weapon;
   }
 
+  /* Method to load artifacts */
   loadArtifacts() {
     this.artifactService.findPartsWithSetByType("flower").subscribe(resp => {
       this.flowers = resp.artifacts;
@@ -146,6 +145,7 @@ export class BuilderComponent implements OnInit {
     })
   }
 
+  /* Methods to change every artifact */
   changeFlower(flower: ArtifactPartBuild) {
     this.flowerSelected.stat = "";
     this.flowerSelected = flower
@@ -163,6 +163,7 @@ export class BuilderComponent implements OnInit {
     this.watchesSelected = watch
   }
 
+  /* Methods to change artifacts stats */
   selectFlowerStat(stat: string) {
     this.flowerSelected.stat = stat;
   }
@@ -180,13 +181,14 @@ export class BuilderComponent implements OnInit {
   selectBandanaStat(stat: string) {
     this.bandanasSelected.stat = stat;
   }
-
+/* Method to load stats */
   loadStats() {
     this.artifactService.findStats().subscribe(resp => {
       this.stats = resp.artifacts;
     })
   }
 
+  /* Method to send build to DB */
   sendBuild() {
     const user: User = JSON.parse(localStorage.getItem("user"))
 
@@ -221,5 +223,38 @@ export class BuilderComponent implements OnInit {
         title: '<div style="font-family:Genshin">An error has ocurred</div>'
       })
     })
+  }
+
+ /**
+   * @function onWindowScroll - Method that listens for whether the user has scrolled the page
+   */
+  @HostListener('window:scroll', []) onWindowScroll(): void {
+    if (
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop > 100
+    ) {
+      this.windowScrolled = true;
+    } else if (
+      (this.windowScrolled && window.pageYOffset) ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop < 10
+    ) {
+      this.windowScrolled = false;
+    }
+  }
+
+  /**
+   * @function scrollToTop - Method to scroll to the top of the page
+   */
+  scrollToTop(): void {
+    (function smoothscroll() {
+      var currentScroll =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      if (currentScroll > 0) {
+        window.requestAnimationFrame(smoothscroll);
+        window.scrollTo(0, currentScroll - currentScroll / 8);
+      }
+    })();
   }
 }

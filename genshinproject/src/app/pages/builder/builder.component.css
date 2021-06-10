@@ -1,11 +1,11 @@
-html {
+.fullContainer {
     color: #1a202c;
     text-align: left;
-    background-color: white;
+    background-color: none !important;
     width: auto;
-    height: 100vh;
-    font-family: 'Numans', sans-serif;
     font-family: Genshin;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @font-face {
@@ -13,7 +13,22 @@ html {
     src: url("../../../assets/fonts/zh-cn.ttf");
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
 
+.my-float{
+	margin-top:22px;
+}
 
 .main-body {
     padding: 5%;

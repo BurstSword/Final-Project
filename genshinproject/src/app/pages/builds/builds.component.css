@@ -1,20 +1,60 @@
-html {
+.fullContainer {
     color: #1a202c;
     text-align: left;
-    background-color: white;
+    background-color: none !important;
     width: 100%;
-    height: 100vh;
-    font-family: 'Numans', sans-serif;
     font-family: Genshin;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @font-face {
     font-family: Genshin;
     src: url("../../../assets/fonts/zh-cn.ttf");
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
 
+.buildImage{
+    background:none;
+    outline: none;
+    box-shadow: none;
+    color: none;
+    border:none;
+    transition: all 300ms ease 0ms;
+}
+.buildImage:focus{
+    border-top: 2px solid white;
+}
+.buildImage:hover{
+    border-top: 2px solid white;
+}
+.img-thumbnail {
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 100px;
+    background: none !important;
+}
+.my-float{
+	margin-top:22px;
+}
 .main-body {
     padding: 5%;
+}
+.iconElement{
+    width: 50px;
+    height: 50px;
 }
 
 .imgAvatar {
@@ -105,3 +145,4 @@ hr {
 .shadow-none {
     box-shadow: none!important;
 }
+

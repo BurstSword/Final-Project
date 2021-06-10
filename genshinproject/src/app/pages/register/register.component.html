@@ -14,7 +14,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user-alt"></i></span>
                                 </div>
-                                <input type="text" formControlName="username" class="form-control"
+                                <input type="text" formControlName="username" pattern="\S+" class="form-control"
                                     placeholder="Username">
                             </div>
                             <div *ngFor="let error of validationMessages.username">

@@ -4,10 +4,13 @@ html {
     background-repeat: no-repeat;
     height: 100vh;
     font-family: Genshin;
-    overflow: hidden;
 }
 
 @font-face {
     font-family: Genshin;
     src: url("../../../assets/fonts/zh-cn.ttf");
+}
+
+.jumbotron{
+    background-color: #fcfcfc !important;
 }

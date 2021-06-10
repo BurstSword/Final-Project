@@ -28,6 +28,11 @@ import { WeaponsImgPipe } from './pipes/weapons-img.pipe';
 import { BuilderComponent } from './pages/builder/builder.component';
 import { BuildArtifactsPipe } from './pipes/build-artifacts.pipe';
 import { BuildsComponent } from './pages/builds/builds.component';
+import { WeaponiconPipe } from './pipes/weaponicon.pipe';
+import { NgxCaptureModule } from 'ngx-capture';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
 
 
 
@@ -54,7 +59,8 @@ import { BuildsComponent } from './pages/builds/builds.component';
     WeaponsImgPipe,
     BuilderComponent,
     BuildArtifactsPipe,
-    BuildsComponent
+    BuildsComponent,
+    WeaponiconPipe
   ],
   imports: [
     BrowserModule,
@@ -62,6 +68,13 @@ import { BuildsComponent } from './pages/builds/builds.component';
     HttpClientModule,
     ReactiveFormsModule,
     NgxSplideModule,
+    NgxCaptureModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]

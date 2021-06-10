@@ -2,7 +2,10 @@
 
 html,
 body {
-    height: 100%;
+    height: auto;
+    background-image:url('./assets/images/backlogin.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
 }
 
 .animated {
@@ -71,3 +74,33 @@ body {
     src: url("./assets/fonts/zh-cn.ttf");
 }
 
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0)
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight
+}

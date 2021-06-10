@@ -1,7 +1,7 @@
-<html>
 <app-nav></app-nav>
-<div class="container-fluid mt-2">
+<div class="container-fluid mt-2 animated fadeIn fullContainer">
 
+    <!-- Breadcrumbs -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
@@ -9,22 +9,26 @@
         </ol>
     </nav>
     <h1>Artifacts</h1>
+    <!-- Loading component -->
     <app-loading id="loadingArtifact" class="animated fadeIn" *ngIf="loading"></app-loading>
 
+    <!-- Slider with artifact images -->
     <div class="animated fadeIn" *ngIf="artifacts">
         <splide id="sliderArtifacts" [options]="{ 
         fixedWidth: 100,
-        height: 160,
+        height: 180,
         gap: 5,
         drag:true,
         pagination: false,
         isNavigation: false,
         type: 'slide'}">
             <splide-slide *ngFor="let item of artifacts">
-                <div><img class="img img-thumbnail" (click)="selectSet(item)" src="{{item.name | artifactSet}}" />
+                <div class="fullArtifact">
+                    <button class="artifactImage"><img class="img img-thumbnail" (click)="selectSet(item)" src="{{item.name | artifactSet}}" /></button>
+                    
                     <p *ngIf="item.name=='Thundersoother'"
-                        style="text-align: center; font-weight: bold; word-break: break-all;">{{item.name}}</p>
-                    <p *ngIf="item.name!='Thundersoother'" style="text-align: center; font-weight: bold;">{{item.name}}
+                        style="text-align: center; font-weight: bold; word-break: break-all; background-color:rgba(255, 255, 255, 0.4);">{{item.name |slice:0:9}}</p>
+                    <p *ngIf="item.name!='Thundersoother'" style="text-align: center; font-weight: bold; background-color:rgba(255, 255, 255, 0.4);">{{item.name|slice:0:9}}
                     </p>
                 </div>
 
@@ -32,6 +36,8 @@
             </splide-slide>
         </splide>
     </div>
+
+    <!-- Card to show artifact set and it´s parts -->
     <div *ngIf="selectedSet" class="main-body animated fadeIn">
         <div class="row gutters-sm cardCharacter">
             <div class="col-md-4 mb-3">
@@ -82,8 +88,7 @@
             </div>
         </div>
     </div>
+    <a (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }" *ngIf="windowScrolled" class="float">
+        <i class="fas fa-arrow-up my-float"></i>
+    </a>
 </div>
-
-
-
-</html>

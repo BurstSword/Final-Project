@@ -1,4 +1,5 @@
 export const environment = {
   production: true,
-  databaseURL:"http://localhost:3300/"
+  databaseURL:"https://genshinbuildssotero.herokuapp.com/",
+  assetsURL:"https://genshinbuildssotero.herokuapp.com/assets/"
 };

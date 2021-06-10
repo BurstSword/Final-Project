@@ -25,7 +25,7 @@ export interface ResponseBuild {
 }
 
 export interface BuildShow {
-    _id?:string,
+    _id?: string,
     name: string,
     idUser: User,
     characterId: Character,
@@ -113,7 +113,8 @@ export interface Character {
     weapon: string,
     nation: string,
     affiliation: string,
-    rarity: number,
+    rarity: string,
+    rarityShow?: number,
     constellation: string
     birthday: string,
     description: string
@@ -125,14 +126,15 @@ export interface Character {
 }
 
 export interface Weapon {
-    _id: string
-    name: string
-    type: string
-    rarity: number
-    baseAttack: number
-    subStat: string
-    passiveName: string
-    passiveDesc: string
+    _id: string,
+    name: string,
+    type: string,
+    rarity: string,
+    rarityShow: number,
+    baseAttack: number,
+    subStat: string,
+    passiveName: string,
+    passiveDesc: string,
     location: string
 }
 
@@ -176,7 +178,7 @@ export interface ArtifactPartBuild {
     stat?: string
 }
 
-export interface ResponseUpdate{
+export interface ResponseUpdate {
     status: number,
     message: string,
     builds: BuildShow,
@@ -184,7 +186,7 @@ export interface ResponseUpdate{
 }
 
 export interface Build {
-    _id?:string,
+    _id?: string,
     name: string,
     idUser: string,
     characterId: string,

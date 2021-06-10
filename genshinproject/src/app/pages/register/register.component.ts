@@ -26,9 +26,9 @@ export class RegisterComponent implements OnInit {
 
   createForm() {
     this.registerForm = this.formBuilder.group({
-      username: ['', [Validators.required, Validators.minLength(6)]],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required]]
+      username: ['', [Validators.required, Validators.minLength(6), Validators.maxLength(10), Validators.pattern("\S+")]],
+      email: ['', [Validators.required, Validators.email, Validators.maxLength(12), Validators.pattern("\S+")]],
+      password: ['', [Validators.required, Validators.pattern("\S+")]]
 
     })
   }
@@ -46,20 +46,24 @@ export class RegisterComponent implements OnInit {
     'username': [
       { type: 'required', message: 'An username is mandatory' },
       { type: 'minlength', message: 'Must be at least 6 characters long' },
+      { type: 'maxlength', message: '10 characters maximum' },
+      { type: 'pattern', message: 'Whitespaces are not allowed' },
     ],
     'email': [
       { type: 'required', message: 'Email is mandatory' },
-      { type: 'mail', message: 'Invalid format' }
+      { type: 'mail', message: 'Invalid format' },
+      { type: 'maxlength', message: '12 characters maximum' },
+      { type: 'pattern', message: 'Whitespaces are not allowed' },
     ],
     'password': [
       { type: 'required', message: 'Password is mandatory' },
+      { type: 'pattern', message: 'Whitespaces are not allowed' },
     ]
 
   }
   register() {
     if (this.registerForm.invalid) return
     const data = this.registerForm.value;
-
 
     this.userService.register(data).subscribe(resp => {
       Swal.fire({

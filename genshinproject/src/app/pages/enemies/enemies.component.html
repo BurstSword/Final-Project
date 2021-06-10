@@ -1,7 +1,6 @@
-<html>
 <app-nav></app-nav>
-<div class="container-fluid mt-2">
-
+<div class="container-fluid mt-2 animated fadeIn fullContainer">
+    <!-- Breadcrumbs -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
@@ -9,8 +8,9 @@
         </ol>
     </nav>
     <h1>Enemies</h1>
+    <!-- Loading component -->
     <app-loading id="loadingEnemies" class="animated fadeIn" *ngIf="loading"></app-loading>
-
+    <!-- Enemies slider -->
     <div class="animated fadeIn" *ngIf="enemies">
         <splide id="sliderEnemies" [options]="{ 
         fixedWidth: 100,
@@ -22,14 +22,18 @@
         type: 'slide'}">
             <splide-slide *ngFor="let item of enemies">
                 <div>
-                    <img class="img img-thumbnail" src="{{item.name |enemyImg}}" (click)="changeEnemy(item.name)" />
-                    <p style="text-align: center; font-weight: bold;">{{item.name}}</p>
+                    <button class="enemyImage"><img class="img img-thumbnail" src="{{item.name |enemyImg}}"
+                            (click)="changeEnemy(item.name)" /></button>
+
+                    <p style="text-align: center; font-weight: bold; background-color:rgba(255, 255, 255, 0.4);">
+                        {{item.name |slice:0:9}}</p>
                 </div>
 
             </splide-slide>
         </splide>
     </div>
-    <div *ngIf="enemySelected" class="main-body animated fadeIn">
+    <!-- Selected enemy -->
+    <div *ngIf="enemySelected" class="main-body animated fadeInRight">
         <div class="row gutters-sm cardCharacter">
             <div class="col-md-4 mb-3">
                 <div class="card">
@@ -46,7 +50,6 @@
                     </div>
                 </div>
                 <div class="card mt-3">
-                    <!-- Elementos si tiene -->
                 </div>
             </div>
             <div class="col-md-8">
@@ -77,14 +80,12 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <a (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }" *ngIf="windowScrolled" class="float">
+        <i class="fas fa-arrow-up my-float"></i>
+    </a>
 </div>
-
-
-
-</html>

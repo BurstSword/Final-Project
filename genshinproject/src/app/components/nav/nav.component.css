@@ -1,3 +1,42 @@
 .btn {
     font-size: 16px;
 }
+
+@font-face {
+    font-family: Genshin;
+    src: url("../../../assets/fonts/zh-cn.ttf");
+}
+
+.navbar {
+    font-family: Genshin;
+    background-color: #264184 !important;
+    opacity: 0.8 !important;
+}
+
+.tab {
+    list-style-position: inside;
+    transition: all 300ms ease 0ms;
+}
+
+.tab:hover {
+    color: white !important;
+}
+
+@media all and (min-width: 992px) {
+    .navbar-nav>.active a {
+        color: white;
+    border-top: solid white;
+    }
+}
+
+/* .navbar-nav>.active a {
+    color: #e53f3c;
+    border-top: solid #e53f3c;
+} */
+
+@media all and (max-width: 991px) {
+    .navbar-nav>.active a {
+        color: white;
+        border-bottom: solid white;
+    }
+}

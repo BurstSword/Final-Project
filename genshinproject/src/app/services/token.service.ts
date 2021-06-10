@@ -10,18 +10,18 @@ import { ResponseUser, User } from '../interfaces';
   providedIn: 'root',
 })
 export class TokenService {
-  
+
   public user: User;
 
-  
+
   constructor(private _http: HttpClient, private _router: Router) { }
 
-  
+
   getToken(): string {
     return localStorage.getItem('token');
   }
 
-  
+
   validateToken(): Observable<boolean> {
     return this._http.get<ResponseUser>(`${environment.databaseURL}auth/renew`).pipe(
       map((resp) => {

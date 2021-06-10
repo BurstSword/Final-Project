@@ -1,55 +1,96 @@
-html {
+.fullContainer {
     color: #1a202c;
     text-align: left;
-    background-color: white;
-    height: 100vh;
+    background-color: none !important;
     width: 100%;
     font-family: Genshin;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-image:url('../../../assets/images/backlogin.jpg') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important; */
 }
+
+
+
 
 @font-face {
     font-family: Genshin;
     src: url("../../../assets/fonts/zh-cn.ttf");
 }
 
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    cursor: pointer;
+    transition: all 300ms ease 0ms;
 }
+
+.float:hover {
+    transform: translateY(-7px);
+}
+
+.my-float {
+    margin-top: 22px;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    border: none;
+    width: 90px;
+    height: 90px;
+    transition: all 300ms ease 0ms;
+    background: none !important;
+}
+
+.imageCharacter{
+    transition: all 300ms ease 0ms;
+}
+
+
+.imageCharacter:hover{
+    border-top: 2px solid white;
+}
+
+.imageCharacter:focus{
+    border-top: 2px solid white;
+}
+
+button{
+    background:none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: none;
+}
+
 .swal-title {
     font-family: Genshin;
 }
-@keyframes fadeIn {
-    from {
-        opacity: 0
-    }
-    to {
-        opacity: 1
-    }
+
+.refreshBtn {
+    width: 42px !important;
+    height: 42px !important;
 }
 
-@-webkit-keyframes fadeIn {
-    from {
-        opacity: 0
-    }
-    to {
-        opacity: 1
-    }
-}
-
-.iconElement{
+.iconElement {
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    transition: all 300ms ease 0ms;
 }
 
-.fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn
+.iconElement:hover {
+    transform: translateY(-7px);
 }
-
-
 
 .splide__slide img {
     width: 100%;
@@ -77,7 +118,6 @@ html {
 .testimonial-group>.row>.col-6 {
     display: inline-block;
 }
-
 
 /* .col-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; }
   .col-4:nth-child(3n+1) { background: #c69; }
@@ -125,14 +165,12 @@ hr {
     margin-left: -8px;
 }
 
-.gutters-sm>.col,
-.gutters-sm>[class*=col-] {
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
     padding-right: 8px;
     padding-left: 8px;
 }
 
-.mb-3,
-.my-3 {
+.mb-3, .my-3 {
     margin-bottom: 1rem!important;
 }
 

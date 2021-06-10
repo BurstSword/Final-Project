@@ -1,6 +1,6 @@
-<html>
 <app-nav></app-nav>
-<div class="container-fluid mt-2">
+<div class="container-fluid mt-2 animated fadeIn fullContainer">
+    <!-- Breadcrumbs -->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
@@ -11,12 +11,13 @@
     <h1>Builds</h1>
 
 
-
+    <!-- Loading component -->
     <app-loading id="loadingBuilds" class="animated fadeIn" *ngIf="loading"></app-loading>
-    <div class="animated fadeIn" *ngIf="builds">
+    <!-- Builds slider -->
+    <div *ngIf="builds" class="animated fadeIn">
         <splide id="sliderBuilds" [options]="{ 
         fixedWidth: 120,
-        height: 150,
+        height: 160,
         gap: 5,
         drag:true,
         pagination: false,
@@ -24,300 +25,346 @@
         type: 'slide'}">
             <splide-slide *ngFor="let item of builds;let index=index">
                 <div>
-                    <img class="img img-thumbnail" (click)="selectBuilds(item)"
-                        src="{{item.characterId.name | characterimage}}" />
-                    <p style="text-align: center; font-weight: bold; word-break: break-all;">{{item.name}}</p>
+                    <button class="buildImage"><img class="img img-thumbnail" (click)="selectBuilds(item)"
+                            src="{{item.characterId.name | characterimage}}" />
+
+                    </button>
+                    <p
+                        style="text-align: center; font-weight: bold; word-break: break-all; background-color:rgba(255, 255, 255, 0.4);">
+                        {{item.name |slice:0:6}}...</p>
 
                 </div>
 
 
             </splide-slide>
+            <splide-slide *ngIf="builds">
+                <div>
+                    <button style="border: none !important;" class="buildImage"><img class="img img-thumbnail"
+                            routerLink="/builder" src="../../../assets/images/plus.png"></button>
+
+                    <p
+                        style="text-align: center; font-weight: bold; word-break: break-all; background-color:rgba(255, 255, 255, 0.4);">
+                        New build</p>
+                </div>
+
+            </splide-slide>
         </splide>
     </div>
-    <div *ngIf="selectedBuild" class="main-body animated fadeIn">
-        <div class="d-flex justify-content-between align-items-center">
-            <h1 *ngIf="isEditing==false">{{selectedBuild.name}}</h1>
-            <div *ngIf="isEditing==true">
-                <label for="buildName">Build name</label>
-                <input type="text" class="form-control mb-2" style="width: 100%;" value="{{selectedBuild.name}}"
-                    id="buildName" placeholder="{{selectedBuild.name}}">
-            </div>
-            <div *ngIf="selectedBuild" class="dropdown dropleft">
-                <button *ngIf="isEditing==false" class="btn btn-info mr-1" type="button" aria-expanded="false"
-                    (click)="edit()">
-                    Edit
-                </button>
-                <button *ngIf="isEditing==true" class="btn btn-info mr-1" type="button" aria-expanded="false"
-                    (click)="edit()">
-                    Stop
-                </button>
-                <button *ngIf="isEditing==true" class="btn btn-success mr-1" type="button" aria-expanded="false"
-                    (click)="saveChanges()">
-                    Save
-                </button>
-                <button *ngIf="isEditing==true" class="btn btn-danger mr-1" type="button" aria-expanded="false"
-                    (click)="removeBuild()">
-                    Delete
-                </button>
-            </div>
-        </div>
-        <div class="row gutters-sm cardCharacter">
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex flex-column align-items-center text-center">
-                            <img src="{{selectedBuild.characterId.name|characterimage}}"
-                                class="rounded-circle imgAvatar">
-                            <div class="mt-3">
-                                <h4>{{selectedBuild.characterId.name}}</h4>
-                            </div>
-                            <div *ngIf="isEditing==true" class="dropdown show">
-                                <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Characters
-                                </a>
 
-                                <div class="dropdown-menu" style="height: 100px;
+    <div>
+        <div *ngIf="selectedBuild" class="main-body animated fadeInRight">
+            <div class="d-flex justify-content-md-between justify-content-around flex-wrap align-items-baseline">
+                <!-- See and edit the build name -->
+                <h2 *ngIf="isEditing==false">{{selectedBuild.name}}</h2>
+                <div *ngIf="isEditing==true">
+                    <input type="text" maxlength="12" class="form-control mb-2" style="width: 100%;"
+                        value="{{selectedBuild.name}}" id="buildName" placeholder="{{selectedBuild.name}}">
+                </div>
+                <!-- Buttons to edit builds -->
+                <div *ngIf="selectedBuild" class="dropdown dropleft my-2">
+                    <button *ngIf="isEditing==false" class="btn btn-info mr-1" type="button" aria-expanded="false"
+                        (click)="edit()">
+                        Edit
+                    </button>
+
+                </div>
+                <div *ngIf="isEditing==true && selectedBuild"
+                    class="d-flex justify-content-around align-items-center my-2">
+                    <button class="btn btn-info mr-1" type="button" aria-expanded="false" (click)="edit()">
+                        Cancel
+                    </button>
+                    <button class="btn btn-success mr-1" type="button" aria-expanded="false" (click)="saveChanges()">
+                        Save
+                    </button>
+                    <button class="btn btn-danger mr-1" type="button" aria-expanded="false" (click)="removeBuild()">
+                        Delete
+                    </button>
+                </div>
+            </div>
+            <!-- Card to see and edit an existing build -->
+            <div class="row gutters-sm cardCharacter">
+                <div class="col-md-4 mb-3">
+                    <!-- Part to see and edit the character selected -->
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="{{selectedBuild.characterId.name|characterimage}}"
+                                    class="rounded-circle imgAvatar">
+                                <div class="mt-3">
+                                    <h4>{{selectedBuild.characterId.name}}</h4>
+                                </div>
+                                <div *ngIf="isEditing==true" class="dropdown show">
+                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Characters
+                                    </a>
+
+                                    <div class="dropdown-menu" style="height: 100px;
                                 overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" *ngFor="let item of characters"
-                                        (click)="changeCharacter(item)">{{item.name}}</a>
+                                        <a class="dropdown-item" *ngFor="let item of characters"
+                                            (click)="changeCharacter(item)">{{item.name}}</a>
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <!-- Part to see and edit the weapon selected -->
+                        <div class="card-body">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <img src="{{selectedBuild.weaponId.name|weaponsImg}}" class="rounded-circle imgAvatar">
+                                <div class="mt-3">
+                                    <h4>{{selectedBuild.weaponId.name}}</h4>
+                                    <div *ngIf="isEditing==true" class="dropdown show">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Weapons
+                                        </a>
+
+                                        <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of weapons"
+                                                (click)="changeWeapon(item)">{{item.name}}</a>
+
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mt-3">
-                    <div class="card-body">
-                        <div class="d-flex flex-column align-items-center text-center">
-                            <img src="{{selectedBuild.weaponId.name|weaponsImg}}" class="rounded-circle imgAvatar">
-                            <div class="mt-3">
-                                <h4>{{selectedBuild.weaponId.name}}</h4>
-                                <div *ngIf="isEditing==true" class="dropdown show">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Weapons
-                                    </a>
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h3>Artifact Pieces</h3>
+                            <div class="row">
+                                <!-- Part to see and edit the flower and flower stat selected -->
+                                <div class="col-sm">
+                                    <img class="artifactImg"
+                                        src="{{selectedBuild.flowerId.name |artifactParts: selectedBuild.flowerId.idSet.name}}">
 
-                                    <div class="dropdown-menu" style="height: 100px;
+                                    <p style="overflow-wrap: break-word; min-height: 36px;">
+                                        {{selectedBuild.flowerId.name}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Flowers
+                                        </a>
+
+                                        <div class="dropdown-menu" style="height: 100px;
                                     overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of weapons"
-                                            (click)="changeWeapon(item)">{{item.name}}</a>
+                                            <a class="dropdown-item" *ngFor="let item of flowers"
+                                                (click)="changeFlower(item)">{{item.name}}</a>
 
+                                        </div>
+                                    </div><br>
+                                    <h3>
+                                        Selected stat
+                                    </h3>
+                                    <p>{{selectedBuild.flowerStat}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show mt-2">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Stats
+                                        </a>
+
+                                        <div class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of flowers[0].stats"
+                                                (click)="selectFlowerStat(item)">{{item}}</a>
+
+                                        </div>
                                     </div>
+
+
+
+
+                                </div>
+
+                                <!-- Part to see and edit the feather and feather stat selected -->
+                                <div class="col-sm">
+                                    <img class="artifactImg"
+                                        src="{{selectedBuild.featherId.name |artifactParts: selectedBuild.featherId.idSet.name}}">
+
+                                    <p style="overflow-wrap: break-word; min-height: 36px;">
+                                        {{selectedBuild.featherId.name}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Feathers
+                                        </a>
+
+                                        <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of feathers"
+                                                (click)="changeFeather(item)">{{item.name}}</a>
+
+                                        </div>
+                                    </div><br>
+                                    <h3>
+                                        Selected stat
+                                    </h3>
+                                    <p>{{selectedBuild.featherStat}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show mt-2">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Stats
+                                        </a>
+
+                                        <div class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of feathers[0].stats"
+                                                (click)="selectFeatherStat(item)">{{item}}</a>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <!-- Part to see and edit the watch and watch stat selected -->
+                                <div class="col-sm">
+                                    <img class="artifactImg"
+                                        src="{{selectedBuild.watchId.name |artifactParts: selectedBuild.watchId.idSet.name}}">
+
+                                    <p style="overflow-wrap: break-word; min-height: 36px;">
+                                        {{selectedBuild.watchId.name}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Watches
+                                        </a>
+
+                                        <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of watches"
+                                                (click)="changeWatch(item)">{{item.name}}</a>
+
+                                        </div>
+                                    </div><br>
+                                    <h3>
+                                        Selected stat
+                                    </h3>
+                                    <p>{{selectedBuild.watchStat}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show mt-2">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Stats
+                                        </a>
+
+                                        <div class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of watches[0].stats"
+                                                (click)="selectWatchStat(item)">{{item}}</a>
+
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                                <!-- Part to see and edit the goblet and goblet stat selected -->
+                                <div class="col-sm">
+                                    <img class="artifactImg"
+                                        src="{{selectedBuild.gobletId.name |artifactParts: selectedBuild.gobletId.idSet.name}}">
+
+                                    <p style="overflow-wrap: break-word; min-height: 36px;">
+                                        {{selectedBuild.gobletId.name}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Goblets
+                                        </a>
+
+                                        <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of goblets"
+                                                (click)="changeGoblet(item)">{{item.name}}</a>
+
+                                        </div>
+                                    </div><br>
+                                    <h3>
+                                        Selected stat
+                                    </h3>
+                                    <p>{{selectedBuild.gobletStat}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show mt-2">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Stats
+                                        </a>
+
+                                        <div class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of goblets[0].stats"
+                                                (click)="selectGobletStat(item)">{{item}}</a>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </div>
+
+                                <!-- Part to see and edit the bandana and bandana stat selected -->
+                                <div class="col-sm">
+                                    <img class="artifactImg"
+                                        src="{{selectedBuild.bandanaId.name |artifactParts: selectedBuild.bandanaId.idSet.name}}">
+
+                                    <p style="overflow-wrap: break-word; min-height: 36px;">
+                                        {{selectedBuild.bandanaId.name}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Bandanas
+                                        </a>
+
+                                        <div class="dropdown-menu" style="height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of bandanas"
+                                                (click)="changeBandana(item)">{{item.name}}</a>
+
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h3>
+                                        Selected stat
+                                    </h3>
+                                    <p>{{selectedBuild.bandanaStat}}</p>
+                                    <div *ngIf="isEditing==true" class="dropdown show mt-2">
+                                        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Stats
+                                        </a>
+
+                                        <div class="dropdown-menu" style="max-height: 100px;
+                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
+                                            <a class="dropdown-item" *ngFor="let item of bandanas[0].stats"
+                                                (click)="selectBandanaStat(item)">{{item}}</a>
+
+                                        </div>
+                                    </div>
+
+
+
+
+
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h3>Artifact Pieces</h3>
-                        <div class="row">
-                            <div class="col-sm">
-                                <img class="artifactImg"
-                                    src="{{selectedBuild.flowerId.name |artifactParts: selectedBuild.flowerId.idSet.name}}">
-
-                                <p style="overflow-wrap: break-word;">{{selectedBuild.flowerId.name}}</p>
-                                <div *ngIf="isEditing==true" class="dropdown show">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Flowers
-                                    </a>
-
-                                    <div class="dropdown-menu" style="height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of flowers"
-                                            (click)="changeFlower(item)">{{item.name}}</a>
-
-                                    </div>
-                                </div>
-                                <div *ngIf="isEditing==true" class="dropdown show mt-2">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Stats
-                                    </a>
-
-                                    <div class="dropdown-menu" style="max-height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of flowers[0].stats"
-                                            (click)="selectFlowerStat(item)">{{item}}</a>
-
-                                    </div>
-                                </div>
-
-                                <h3>
-                                    Selected stat
-                                </h3>
-                                <ul>
-                                    <li style="list-style-type: none;">{{selectedBuild.flowerStat}}</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm">
-                                <img class="artifactImg"
-                                    src="{{selectedBuild.featherId.name |artifactParts: selectedBuild.featherId.idSet.name}}">
-
-                                <p style="overflow-wrap: break-word;">{{selectedBuild.featherId.name}}</p>
-                                <div *ngIf="isEditing==true" class="dropdown show">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Feathers
-                                    </a>
-
-                                    <div class="dropdown-menu" style="height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of feathers"
-                                            (click)="changeFeather(item)">{{item.name}}</a>
-
-                                    </div>
-                                </div>
-                                <div *ngIf="isEditing==true" class="dropdown show mt-2">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Stats
-                                    </a>
-
-                                    <div class="dropdown-menu" style="max-height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of feathers[0].stats"
-                                            (click)="selectFeatherStat(item)">{{item}}</a>
-
-                                    </div>
-                                </div>
-
-                                <h3>
-                                    Selected stat
-                                </h3>
-                                <ul>
-                                    <li style="list-style-type: none;">{{selectedBuild.featherStat}}</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm">
-                                <img class="artifactImg"
-                                    src="{{selectedBuild.watchId.name |artifactParts: selectedBuild.watchId.idSet.name}}">
-
-                                <p style="overflow-wrap: break-word;">{{selectedBuild.watchId.name}}</p>
-                                <div *ngIf="isEditing==true" class="dropdown show">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Watches
-                                    </a>
-
-                                    <div class="dropdown-menu" style="height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of watches"
-                                            (click)="changeWatch(item)">{{item.name}}</a>
-
-                                    </div>
-                                </div>
-                                <div *ngIf="isEditing==true" class="dropdown show mt-2">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Stats
-                                    </a>
-
-                                    <div class="dropdown-menu" style="max-height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of watches[0].stats"
-                                            (click)="selectWatchStat(item)">{{item}}</a>
-
-                                    </div>
-                                </div>
-
-                                <h3>
-                                    Selected stat
-                                </h3>
-                                <ul>
-                                    <li style="list-style-type: none;">{{selectedBuild.watchStat}}</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm">
-                                <img class="artifactImg"
-                                    src="{{selectedBuild.gobletId.name |artifactParts: selectedBuild.gobletId.idSet.name}}">
-
-                                <p style="overflow-wrap: break-word;">{{selectedBuild.gobletId.name}}</p>
-                                <div *ngIf="isEditing==true" class="dropdown show">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Goblets
-                                    </a>
-
-                                    <div class="dropdown-menu" style="height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of goblets"
-                                            (click)="changeGoblet(item)">{{item.name}}</a>
-
-                                    </div>
-                                </div>
-                                <div *ngIf="isEditing==true" class="dropdown show mt-2">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Stats
-                                    </a>
-
-                                    <div class="dropdown-menu" style="max-height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of goblets[0].stats"
-                                            (click)="selectGobletStat(item)">{{item}}</a>
-
-                                    </div>
-                                </div>
-
-                                <h3>
-                                    Selected stat
-                                </h3>
-                                <ul>
-                                    <li style="list-style-type: none;">{{selectedBuild.gobletStat}}</li>
-                                </ul>
-                            </div>
-                            <div class="col-sm">
-                                <img class="artifactImg"
-                                    src="{{selectedBuild.bandanaId.name |artifactParts: selectedBuild.bandanaId.idSet.name}}">
-
-                                <p style="overflow-wrap: break-word;">{{selectedBuild.bandanaId.name}}</p>
-                                <div *ngIf="isEditing==true" class="dropdown show">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Bandanas
-                                    </a>
-
-                                    <div class="dropdown-menu" style="height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of bandanas"
-                                            (click)="changeBandana(item)">{{item.name}}</a>
-
-                                    </div>
-                                </div>
-                                <div *ngIf="isEditing==true" class="dropdown show mt-2">
-                                    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Stats
-                                    </a>
-
-                                    <div class="dropdown-menu" style="max-height: 100px;
-                                    overflow-y: auto;" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" *ngFor="let item of bandanas[0].stats"
-                                            (click)="selectBandanaStat(item)">{{item}}</a>
-
-                                    </div>
-                                </div>
-
-                                <h3>
-                                    Selected stat
-                                </h3>
-                                <ul>
-                                    <li style="list-style-type: none;">{{selectedBuild.bandanaStat}}</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
         </div>
     </div>
+    <a (click)="scrollToTop()" [ngClass]="{ 'show-scrollTop': windowScrolled }" *ngIf="windowScrolled" class="float">
+        <i class="fas fa-arrow-up my-float"></i>
+    </a>
 </div>
-
-</html>

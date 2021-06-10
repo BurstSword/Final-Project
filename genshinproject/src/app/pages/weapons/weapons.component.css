@@ -1,21 +1,69 @@
+.fullContainer {
+    color: #1a202c;
+    text-align: left;
+    background-color: none !important;
+    width: 100%;
+    font-family: Genshin;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 @font-face {
     font-family: Genshin;
     src: url("../../../assets/fonts/zh-cn.ttf");
 }
 
-html {
-    color: #1a202c;
-    text-align: left;
-    background-color: white;
-    height: 100vh;
-    width: 100%;
-    font-family: Genshin;
+.btnFilter {
+    background-color: #e2e8f0;
 }
-.btnFilter{
-background-color: #e2e8f0;
-}
+
 .main-body {
     padding: 5%;
+}
+
+.img-thumbnail {
+    cursor: pointer;
+    border: none;
+    width: 90px;
+    height: 90px;
+    background: none !important;
+}
+
+.weaponImage {
+    transition: all 300ms ease 0ms;
+}
+
+.weaponImage:focus {
+    border-top: 2px solid white;
+}
+
+.weaponImage:hover {
+    border-top: 2px solid white;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: none;
+}
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #0C9;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float {
+    margin-top: 22px;
 }
 
 .imgAvatar {
@@ -84,14 +132,12 @@ hr {
     margin-left: -8px;
 }
 
-.gutters-sm>.col,
-.gutters-sm>[class*=col-] {
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
     padding-right: 8px;
     padding-left: 8px;
 }
 
-.mb-3,
-.my-3 {
+.mb-3, .my-3 {
     margin-bottom: 1rem!important;
 }
 
